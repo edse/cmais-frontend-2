@@ -99,39 +99,11 @@ table, td, th, tfoot {border:solid 1px #000; padding:5px;text-align:left}
                     <hr />
                   </div>
                   <div class="linha t1">
-                    <p>Prelúdio, o show de calouros de música clássica da TV brasileira, está de volta!<br>
-											O programa une a música erudita ao tradicional formato de show de calouros: instrumentistas e cantores têm a oportunidade de apresentar seu talento como solista de uma orquestra profissional regida pelo maestro e diretor artístico Júlio Medaglia.<br><br>
-											 
-											Venha participar da plateia! Confira abaixo as datas:<br> 
-										</p>
-											<table border="2">
-											<tr>
-												<td>1ª e 2ª eliminatórias</td>
-												<td>21 de junho (sábado) – Theatro São Pedro</td>
-											</tr>
-											<tr>
-												<td> 3ª e 4ª eliminatórias</td>
-												<td>27 de julho (domingo) – Theatro São Pedro </td>
-											</tr>
-											<tr>
-												<td> 5ª e 6ª eliminatórias</td>
-												<td>23 de agosto (sábado) – Theatro São Pedro</td>
-											</tr>
-											<tr>
-												<td>1ª e 2ª semifinais</td>
-												<td>18 de outubro (sábado) – Theatro São Pedro</td>
-											</tr>
-											<tr>
-												<td> Final</td>
-												<td>30 de novembro (domingo) – Sala SP </td>
-											</tr>
-											</table>
-											<br><br>
-											<p>
-											<b>Endereços:</b><br>
-											<b>Theatro São Pedro:</b> Rua Albuquerque Lins, 207 | Campos Elíseos |São Paulo-SP| CEP: 01152-000<br>
-											<b>Sala São Paulo:</b> Praça Júlio Prestes, nº 16 | Luz | São Paulo-SP| CEP 01218-020
-											</p>
+                    <?php if(isset($displays["participe-da-plateia"])):
+										foreach ($displays["participe-da-plateia"] as $k => $bloco):?>
+												<?php echo html_entity_decode($bloco->Asset->AssetContent->render())?>	
+											<?php endforeach;?>
+										<?php endif;?>
  											
                     
                   </div>                  
