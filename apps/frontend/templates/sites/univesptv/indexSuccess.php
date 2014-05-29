@@ -48,6 +48,7 @@
           <?php if(isset($program) && $program->id > 0): ?>
           <!-- horario -->
           <div id="horario">
+          	<img src="http://cmais.com.br/portal/images/capaPrograma/univesptv/logo-univesp.png">
             <p>Canal digital 2.2 da multiprogramação da TV Cultura</p>
           </div>
           <!-- /horario -->
