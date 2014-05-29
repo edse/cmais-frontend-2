@@ -13,7 +13,7 @@
       <div id="barra-site">
         
         <div class="topo-programa">
-          <h2><a href="<?php echo $site->retriveUrl() ?>"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://midia.cmais.com.br/programs/<?php echo $site->getImageThumb() ?>"style=" display: block; " />
+          <h2><a href="<?php echo $site->retriveUrl() ?>"><img title="<?php echo $site->getTitle() ?>" alt="<?php echo $site->getTitle() ?>" src="http://midia.cmais.com.br/programs/<?php echo $site->getImageThumb() ?>"style=" display: block; margin-bottom:5px;" />
           	<p>Canal digital 2.2 da multiprogramação da TV Cultura</p>
           </a></h2>
           
@@ -22,7 +22,7 @@
           <?php if(isset($program) && $program->id > 0): ?>
           <!-- horario -->
           <div id="horario">
-          	<a href="http://univesp.br/"><img src="http://cmais.com.br/portal/images/capaPrograma/univesptv/logo-univesp.png"></a>
+          	<a href="http://univesp.br/"><img src="http://cmais.com.br/portal/images/capaPrograma/univesptv/logo-univesp.png" style="display: block;float: right;"></a>
           </div>
           <!-- /horario -->
           <?php endif; ?>
