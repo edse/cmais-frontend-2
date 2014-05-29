@@ -29,12 +29,7 @@ $prevDateUrl = "http://univesptv.cmais.com.br/programacao/".str_replace("/","-",
           	<p>Canal digital 2.2 da multiprogramação da TV Cultura</p>
           </a></h2>
           
-          <?php/*
-          <?php if(isset($program) && $program->id > 0): ?>
-          <?php include_partial_from_folder('blocks','global/like', array('site' => $site, 'uri' => $uri, 'program' => $program)) ?>
-          <?php endif; ?>
-					 */?>
-          
+         
           <?php if(isset($program) && $program->id > 0): ?>
           <!-- horario -->
           <div id="horario">
