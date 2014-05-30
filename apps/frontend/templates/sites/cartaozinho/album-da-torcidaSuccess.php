@@ -87,7 +87,7 @@
          		 </a>
         
         <!-- BOX LATERAL -->
-        <?php include_partial_from_folder('blocks','global/shortcuts') ?>
+        <?php //include_partial_from_folder('blocks','global/shortcuts') ?>
         <!-- BOX LATERAL -->
 
         <!-- CONTEUDO PAGINA -->
@@ -198,7 +198,7 @@
                 <!--/ album-->
 							 <?php endif; ?>
 						  <?php endif; ?>
-              
+               <div class="fb-like" data-href="http://tvcultura.cmais.com.br/d.php/cartaozinho/album-da-torcida" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 							<?php
 							/*
 							<div class="albumEsq">
