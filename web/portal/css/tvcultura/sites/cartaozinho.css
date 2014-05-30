@@ -250,6 +250,7 @@ body { background:url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho
 #loading p{text-align:center;font-size: 24px;color: #FFF500;font-family: 'ds-pointregular';}
 
 .mande-sua-foto-internaBig{background: url(http://cmais.com.br/portal/images/capaPrograma/cartaozinho/box_maior.png) no-repeat;width: 875px;height: 170px;margin: 1% 10% 2%;display: block;}
+.fancybox-title {width: 93%;}
 
 
 
