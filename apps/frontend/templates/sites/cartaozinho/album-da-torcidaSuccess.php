@@ -456,12 +456,13 @@
                          
 
 //console.log($(this).attr("aria-label"));
-var share = '<div class="fb-share-button" data-href="<?php echo $displays["enviados"][$fig]->Asset->retriveImageUrlByImageUsage('image-9'); ?>" data-type="button_count"></div>';
+
 	$(".fancybox2").fancybox({
 			beforeShow: function () {
-		$(this.title).append(share);
-		},
-	//	$(".fancybox-inner").append('<div class="fb-share-button" data-href="<?php echo $displays["enviados"][$fig]->Asset->retriveImageUrlByImageUsage('image-9'); ?>" data-type="button_count"></div>')
+				var share = '<div class="fb-share-button" data-href="<?php echo $displays["enviados"][$fig]->Asset->retriveImageUrlByImageUsage('image-9'); ?>" data-type="button_count"></div>';
+		//$(this.title).append(share);
+	$(".fancybox-inner").append(share);
+	},
 	 helpers : {
         title: {
             type: 'over'
