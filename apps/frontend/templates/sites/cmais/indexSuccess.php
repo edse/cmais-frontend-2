@@ -445,7 +445,9 @@
             
             //caso destaque-videos seja o principal
             <?php if($displays_videos == "destaque"): ?>
-              recomecaCarrossel();
+              <?php if(count($displays["destaque-videos"])>1):?>
+                recomecaCarrossel();
+              <?php endif; ?>
             <?php endif; ?>
             
             <?php if($displays_videos == "pull"): ?>
@@ -467,7 +469,9 @@
            
             //caso destaque-videos seja o principal
             <?php if($displays_videos == "destaque"): ?>
-              recomecaCarrossel();
+              <?php if(count($displays["destaque-videos"])>1):?>
+                recomecaCarrossel();
+              <?php endif; ?>
             <?php endif; ?> 
              
            break;
