@@ -137,7 +137,6 @@
                                     	<img src="http://cmais.com.br/portal/images/capaPrograma/cartaozinho/borda_figurinha.png" <?php echo $estilo[$j]?> >
                                     </div>
                                     <div class="legenda"><?php echo $displays["enviados"][$fig]->getTitle(); ?></div>
-                                    <div class="fb-share-button" data-href="<?php// echo $displays["enviados"][$fig]->Asset->retriveImageUrlByImageUsage('image-9'); ?>" data-type="button_count"></div>
                                   </div>
                                 </a>
                               </li>
@@ -457,7 +456,13 @@
                          
 
 //console.log($(this).attr("aria-label"));
+
 	$(".fancybox2").fancybox({
+			beforeShow: function () {
+				var share = '<div class="fb-share-button" data-href="<?php echo $displays["enviados"][$fig]->Asset->retriveImageUrlByImageUsage('image-9'); ?>" data-type="button_count"></div>';
+		//$(this.title).append(share);
+	$(".fancybox-inner").append(share);
+	},
 	 helpers : {
         title: {
             type: 'over'
