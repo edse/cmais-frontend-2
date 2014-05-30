@@ -13,7 +13,15 @@
   
     <?php use_helper('I18N', 'Date') ?>
     <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
-    
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
   <div class="bg-chamada">
     <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
   </div>
@@ -129,6 +137,7 @@
                                     	<img src="http://cmais.com.br/portal/images/capaPrograma/cartaozinho/borda_figurinha.png" <?php echo $estilo[$j]?> >
                                     </div>
                                     <div class="legenda"><?php echo $displays["enviados"][$fig]->getTitle(); ?></div>
+                                    <div class="fb-share-button" data-href="<?php echo $displays["enviados"][$fig]->Asset->retriveImageUrlByImageUsage('image-9'); ?>" data-type="button_count"></div>
                                   </div>
                                 </a>
                               </li>
