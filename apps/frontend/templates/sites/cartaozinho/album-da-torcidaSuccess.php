@@ -457,6 +457,9 @@
 
 //console.log($(this).attr("aria-label"));
 	$(".fancybox2").fancybox({
+			beforeShow: function () {
+		$(this.title).append(share);
+		},
 	//	$(".fancybox-inner").append('<div class="fb-share-button" data-href="<?php echo $displays["enviados"][$fig]->Asset->retriveImageUrlByImageUsage('image-9'); ?>" data-type="button_count"></div>')
 	 helpers : {
         title: {
