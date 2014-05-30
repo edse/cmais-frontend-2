@@ -71,7 +71,7 @@
                 <h3 class="tit-pagina grid3"><?php echo $section->getTitle() ?></h3>  
                 <p><?php echo $section->getDescription()?></p>
 
-                teste  
+                <?php include_partial_from_folder('blocks','global/formCentralRelacionamento') ?>  
               </div>
             </div>
             <!-- /ESQUERDA -->
