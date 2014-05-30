@@ -762,7 +762,9 @@
                   $("#form4 .control-group select").each(function(index){
                     if(index>=5){
                       $(this).parent().append('<i class=" icon-question-sign example" data-toggle="tooltip" data-placement="right" title="'+datas[index - 5]+'" data-original-title="'+datas[index]+'"></i>');
-                      $(".example").tooltip();
+                      setTimeout(function(){
+                        $(".example").tooltip();                       
+                      },100);
                     }
                   })
 
