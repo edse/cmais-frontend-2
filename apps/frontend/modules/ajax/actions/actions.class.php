@@ -1243,7 +1243,8 @@ public function executeVilasesamogetcontents(sfWebRequest $request){
         $start = ($page * $items)-$items;
       
       //$array_not_in[] = 180604;
-      $array_not_in = array(183836, 183839, 183840, 190079, 190080, 190081, 190082, 190083, 191540); 
+      //$array_not_in = array(183836, 183839, 183840, 190079, 190080, 190081, 190082, 190083, 191540);
+      $array_not_in = array(191540); 
       //$array_not_in[] = 1; 
 			//Desabilitado em 08/05: 190079, 190080, 190081, 190082, 190083      
       
