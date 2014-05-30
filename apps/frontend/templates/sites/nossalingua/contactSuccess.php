@@ -1,6 +1,9 @@
     <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/<?php echo $section->Site->getSlug() ?>.css" type="text/css" />
     <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/secoes/contato.css" type="text/css" />
-    
+    <link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/geral.css" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/fpa.css" type="text/css" />
     <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/central-de-relacionamento.css" type="text/css" />
    
     <?php use_helper('I18N', 'Date') ?>

@@ -764,7 +764,7 @@
                       $(this).parent().append('<i class=" icon-question-sign example" data-toggle="tooltip" data-placement="right" title="'+datas[index - 5]+'" data-original-title="'+datas[index]+'"></i>');
                       setTimeout(function(){
                         $(".example").tooltip();                       
-                      },1000);
+                      },100);
                     }
                   })
 
