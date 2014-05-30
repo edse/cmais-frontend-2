@@ -13,13 +13,14 @@
   
     <?php use_helper('I18N', 'Date') ?>
     <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
-    <!--img src="http://cmais.com.br/portal/images/capaPrograma/cartaozinho/logo-copa.png"-->
+    
   <div class="bg-chamada">
     <?php if(isset($displays["alerta"])) include_partial_from_folder('blocks','global/breakingnews', array('displays' => $displays["alerta"])) ?>
   </div>
   <div class="bg-site">
     <!-- CAPA SITE -->
     <div id="capa-site">
+    	<img src="http://cmais.com.br/portal/images/capaPrograma/cartaozinho/logo-copa.png" style="display: none">
 
       <!-- BARRA SITE -->
       <div id="barra-site">
