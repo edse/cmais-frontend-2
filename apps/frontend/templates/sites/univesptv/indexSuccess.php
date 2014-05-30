@@ -235,7 +235,7 @@
               */ ?>
                             
               <!-- BOX FACEBOOK -->
-              <?php include_partial_from_folder('blocks','global/facebook-1c', array('site' => $site, 'url' => $url)) ?>
+              <?php include_partial_from_folder('blocks','global/facebook-1c-3', array('site' => $site, 'url' => $url)) ?>
               <!-- /BOX FACEBOOK -->
               
               <!-- BOX TWITTER -->
