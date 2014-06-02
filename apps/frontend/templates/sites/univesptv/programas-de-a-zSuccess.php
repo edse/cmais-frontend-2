@@ -171,7 +171,6 @@
             			<h3><a name="<?php if ($k=='#') echo 'num'; else echo strtolower($k); ?>" style="display:block; padding-top:70px"><?php echo $k; ?></a></h3>
             			<?php if (count($programs) > 0): ?>
             			<ul>
-
             				<?php foreach($programs as $p): ?>
             						<?php
 													$homepage = array("home", "index", "homepage");
@@ -186,13 +185,12 @@
                             <li>
                               <a href="<?php echo str_replace("tvcultura.cmais.com.br/", "", $p->retriveUrl()); ?>"><?php echo $p->getTitle(); ?><?php if ($p->getImageIcon() || $p->getSchedule()): ?><span><p style="min-height:80px"><?php if ($p->getImageIcon()): ?><img class="logo" src="http://midia.cmais.com.br/programs/<?php echo $p->getImageIcon(); ?>" /><?php endif; ?></p><img class="seta" src="http://cmais.com.br/portal/images/ico-bg-indiceOver.png" /><p><?php echo $p->getSchedule(); ?></p></span><?php endif; ?></a>
                             </li>
-                        	 <?php endif; ?>
-                          <?php endforeach; ?>
+                            <?php endif; ?>
+                            <?php endforeach; ?>
                         </ul>
                         <?php else: ?>
                         <ul><li>Nenhum programa</li></ul>
                         <?php endif; ?>  
-            		</div> 
             		</div>
             	</div>
             	<?php endforeach; ?>
