@@ -85,6 +85,7 @@
 													   		 },
 													   		 afterLoad   : function() {
 													   		  this.content = this.element.context.lastElementChild.innerHTML;
+													   		  $('.fancybox-inner').addClass('conteudoTexto').show();
                                  },
 													   		 helpers : {
 													            title: {
@@ -92,6 +93,7 @@
 													            }
 													          }
 													      });
+													      
 														 
 											     
 											</script>
