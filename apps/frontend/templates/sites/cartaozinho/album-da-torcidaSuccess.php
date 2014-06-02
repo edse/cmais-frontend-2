@@ -87,7 +87,7 @@
          		 </a>
         
         <!-- BOX LATERAL -->
-        <?php include_partial_from_folder('blocks','global/shortcuts') ?>
+        <?php //include_partial_from_folder('blocks','global/shortcuts') ?>
         <!-- BOX LATERAL -->
 
         <!-- CONTEUDO PAGINA -->
@@ -137,6 +137,7 @@
                                     	<img src="http://cmais.com.br/portal/images/capaPrograma/cartaozinho/borda_figurinha.png" <?php echo $estilo[$j]?> >
                                     </div>
                                     <div class="legenda"><?php echo $displays["enviados"][$fig]->getTitle(); ?></div>
+                                    
                                   </div>
                                 </a>
                               </li>
@@ -197,7 +198,7 @@
                 <!--/ album-->
 							 <?php endif; ?>
 						  <?php endif; ?>
-              
+               <div class="fb-like" data-href="http://tvcultura.cmais.com.br/d.php/cartaozinho/album-da-torcida" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 							<?php
 							/*
 							<div class="albumEsq">
@@ -456,13 +457,7 @@
                          
 
 //console.log($(this).attr("aria-label"));
-
 	$(".fancybox2").fancybox({
-			beforeShow: function () {
-				var share = '<div class="fb-share-button" data-href="<?php echo $displays["enviados"][$fig]->Asset->retriveImageUrlByImageUsage('image-9'); ?>" data-type="button_count"></div>';
-		//$(this.title).append(share);
-	$(".fancybox-inner").append(share);
-	},
 	 helpers : {
         title: {
             type: 'over'

@@ -423,7 +423,7 @@
         videoId: id
       });
        
-      console.log("player:"+player[cont]);
+      //console.log("player:"+player[cont]);
       player[cont].addEventListener("onStateChange", function(res){
          //console.log(res.data);
          //console.log("playing");
@@ -544,8 +544,8 @@
         proximo = $(atual).next();
       }
       // Simula o click do mï¿½todo "changeAbas"
-      console.log(contVideo);
-      console.log(quantVideos);
+      //console.log(contVideo);
+      //console.log(quantVideos);
       $(proximo).find('a').click();
       
         
