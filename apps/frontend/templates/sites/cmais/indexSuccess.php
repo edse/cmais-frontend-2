@@ -94,7 +94,7 @@
                 <!-- / BOX PUBLICIDADE 3 -->
                 
                 <!-- BOX ASSESSORIA -->
-                <?php //if(isset($displays["destaque-assesoria-300x50"])) include_partial_from_folder('blocks','global/banner-300x50', array('displays' => $displays["destaque-assesoria-300x50"])) ?>
+                <?php if(isset($displays["destaque-assesoria-300x50"])) include_partial_from_folder('blocks','global/banner-300x50', array('displays' => $displays["destaque-assesoria-300x50"])) ?>
                 <!-- / BOX ASSESSORIA -->                
                 
               </div>
