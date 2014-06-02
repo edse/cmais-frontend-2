@@ -127,6 +127,15 @@
             			<?php if (count($programs) > 0): ?>
             			<ul>
             				<?php foreach($programs as $p): ?>
+            						<?php
+													$homepage = array("home", "index", "homepage");
+													$site_sections = $p->Site->getSections();
+													$show_program = FALSE;
+													
+													foreach ($site_sections as $key => $ss) if(in_array($ss->slug, $homepage))  $show_program = TRUE;
+													
+													if($show_program):
+            						?>            					
                             <li>
                               <a href="<?php echo $p->retriveUrl(); ?>"><?php echo $p->getTitle(); ?><?php if ($p->getImageIcon() || $p->getSchedule()): ?>
                                 <span>
@@ -148,7 +157,8 @@
                                     <?php endif; ?>
                                   </a>
                             </li>
-                            <?php endforeach; ?>
+                        	 <?php endif; ?>
+                          <?php endforeach; ?>
                         </ul>
                         <?php else: ?>
                         <ul><li>Nenhum programa</li></ul>

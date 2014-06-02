@@ -232,8 +232,18 @@ $prevDateUrl = "http://multicultura.cmais.com.br/programacao/".str_replace("/","
                     <p class="bold"><?php //echo $d->AssetBroadcast->getHeadlineLong() ?></p>
                     -->
                     <?php if($d->Program->Site->getId()>0): ?>
-                    <a class="site" href="<?php echo $d->retriveUrl() ?>">ir ao site</a>
-                    <br />
+		        						<?php
+													$homepage = array("home", "index", "homepage");
+													$site_sections = $d->Program->Site->getSections();
+													$show_program = FALSE;
+													
+													foreach ($site_sections as $key => $ss) if(in_array($ss->slug, $homepage))  $show_program = TRUE;
+													
+													if($show_program):
+			        					?>                    	
+			                    <a class="site" href="<?php echo $d->retriveUrl() ?>">ir ao site</a>
+			                    <br />
+                    	<?php endif; ?>
                     <?php endif; ?>
                     <?php if($d->getIsLive()): ?>
                     <a class="site" href="http://cmais.com.br/aovivo">assista ao vivo pela web</a>
