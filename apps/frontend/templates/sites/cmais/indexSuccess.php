@@ -404,7 +404,7 @@
           //passando o attributo src para o respectivo player
           $("#player"+i).attr('src', youTubeUrl[0]+"?rel=0&"+youTubeUrl[1]);
           
-        },3000);
+        },1000);
     });
     
     
