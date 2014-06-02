@@ -27,7 +27,7 @@
   </section>
   <!--section-->
   <section  class="campanhasuccess" >
-   <?php include_partial_from_folder('sites/vilasesamo', 'global/form-campanha-sem-anexo', array("site" => $site,  "parent" => $section->Parent)) ?>
+   <?php include_partial_from_folder('sites/vilasesamo', 'global/form-campanha-anexo', array("site" => $site,  "parent" => $section->Parent)) ?>
   </section>
   <!--section-->
   
@@ -38,7 +38,7 @@
         <!--primeiro grupo - ativo no mes -->
         <?php
           //$sectionCampaign = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(), $campaign->getSlug());
-          $sectionCampaign = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(), "brincando-em-familia");
+          $sectionCampaign = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(), "brincando-na-comunidade");
           $blocks = Doctrine_Query::create()
             ->select('b.*')
             ->from('Block b, Section s')
