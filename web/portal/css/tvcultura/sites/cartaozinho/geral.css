@@ -261,7 +261,7 @@ label.error {position: absolute;bottom: 0!important;left: 44px!important;font-si
 .todos-itens h2{font-size:20px; color:#2B8DB2;padding:5px 20px;}
 .todos-itens li {width: 600px;margin: 0 20px 20px 0;height: 680px;max-height: none;}
 
-
-
+/* album */
+.fb_iframe_widget {bottom: -8px;left: -23%;background: white;padding: 5px;}
 
 
