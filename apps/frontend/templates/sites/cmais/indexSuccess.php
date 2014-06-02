@@ -490,14 +490,14 @@
            break;
            
          }
-         
+       <?php if($displays_videos == "destaque"): ?>
          $('.carrossel-videos .pag-bola').mousedown(function() {
             //console.log(playing);
             if(playing)
              playing.pauseVideo();
              pareiCarrossel();
           });
-          
+        <?php endif; ?>
           
           
       });
