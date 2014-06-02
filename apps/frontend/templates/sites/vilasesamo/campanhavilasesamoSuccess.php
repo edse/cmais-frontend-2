@@ -27,7 +27,7 @@
   </section>
   <!--section-->
   <section  class="campanhasuccess" >
-   <?php include_partial_from_folder('sites/vilasesamo', 'global/form-campanha-sem-anexo', array("site" => $site,  "parent" => $section->Parent)) ?>
+   <?php include_partial_from_folder('sites/vilasesamo', 'global/form-campanha-anexo', array("site" => $site,  "parent" => $section->Parent)) ?>
   </section>
   <!--section-->
   
