@@ -586,6 +586,16 @@ class ajaxActions extends sfActions
           ->andWhere('p.is_in_menu = 1')
           ->orderBy('p.title')
           ->execute();
+				
+				$homepage = array("home", "index", "homepage");
+								
+				foreach ($programs as $k=>$p){
+					$site_sections = $p->Site->getSections();
+					foreach ($site_sections as $key => $ss){
+						if(in_array($ss->slug, $homepage))   $link[] = $p->id;
+					}
+				}					
+					
         $c1 = ceil((count($programs)/4)*1); $c2 = ceil((count($programs)/4)*2); $c3 = ceil((count($programs)/4)*3); $c4 = ceil((count($programs)/4)*4);
         for($i=0; $i<count($programs); $i++){
           if($i <= $c1) $pc1[] = $programs[$i];
@@ -595,18 +605,37 @@ class ajaxActions extends sfActions
         }
         unset($programs);
         $return = '<ul class="lista">';
-        foreach($pc1 as $p)
-          $return .= '<li><a href="'.$p->retriveUrl().'">'.$p->getTitle().'</a></li>';
+        
+        foreach($pc1 as $p){
+        	if(in_array($p->id, $link)){
+          	$return .= '<li><a href="'.$p->retriveUrl().'">'.$p->getTitle().'</a></li>';
+					}else
+						$return .= '<li><a href="#">'.$p->getTitle().'</a></li>';
+        }	
         $return .= '</ul><ul class="lista">';
-        foreach($pc2 as $p)
-          $return .= '<li><a href="'.$p->retriveUrl().'">'.$p->getTitle().'</a></li>';
+				
+        foreach($pc2 as $p){
+        	if(in_array($p->id, $link)){
+          	$return .= '<li><a href="'.$p->retriveUrl().'">'.$p->getTitle().'</a></li>';
+					}else
+						$return .= '<li><a href="#">'.$p->getTitle().'</a></li>';
+        }	
         $return .= '</ul><ul class="lista">';
-        foreach($pc3 as $p)
-          $return .= '<li><a href="'.$p->retriveUrl().'">'.$p->getTitle().'</a></li>';
+        foreach($pc3 as $p){
+        	if(in_array($p->id, $link)){
+          	$return .= '<li><a href="'.$p->retriveUrl().'">'.$p->getTitle().'</a></li>';
+					}else
+						$return .= '<li><a href="#">'.$p->getTitle().'</a></li>';
+        }	
         $return .= '</ul><ul class="lista">';
-        foreach($pc4 as $p)
-          $return .= '<li><a href="'.$p->retriveUrl().'">'.$p->getTitle().'</a></li>';
-        $return .= '</ul><div class="botoes"><a href="http://multicultura.cmais.com.br/programacao">Grade completa</a><!--<a href="http://cmais.com.br/programas-de-a-z">Todos os programas de A a Z</a>--></div>';
+				
+        foreach($pc4 as $p){
+        	if(in_array($p->id, $link)){
+          	$return .= '<li><a href="'.$p->retriveUrl().'">'.$p->getTitle().'</a></li>';
+					}else
+						$return .= '<li><a href="#">'.$p->getTitle().'</a></li>';
+        }	
+        $return .= '</ul><div class="botoes"><a href="http://multicultura.cmais.com.br/programacao">Grade completa</a><!--<a href="http://cmais.com.br/programas-de-a-z">Todos os programas de A a Z</a>--></div>';				
       }
       elseif($request->getParameter('content') == "tvrtb"){
         $programs = array(); $pc1 = array(); $pc2 = array(); $pc3 = array(); $pc4 = array();
