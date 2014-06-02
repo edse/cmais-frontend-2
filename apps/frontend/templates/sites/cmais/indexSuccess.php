@@ -393,8 +393,9 @@
            * chamando função do player para js
            * por default do API o nome é onYouTubeIframeAPIReady() renomei para possibilitar chama-lá a hora que quiser no código e poder passar parâmetros
            * parâmetros (string:id, string:contador, numero:width, numero:height, string:id)
-           */ 
-          onYouTubeIframeAPIReadyCmais("player"+i, i, 310, 216, id2[id2.length-1]); 
+           */
+          var playerYoutube = document.getElementById('player'+i); 
+          onYouTubeIframeAPIReadyCmais(playerYoutube, i, 310, 216, id2[id2.length-1]); 
           
           //tratando url para adicionar parametro rel=0 e quaisquer mais que venha a ter
           youTubeUrl = $("#player"+i).attr('src').split("?"); 
@@ -420,10 +421,13 @@
       player[cont] = new YT.Player(obj,{ 
         height: height,
         width: width,
-        videoId: id
+        videoId: id,
+        playerVars: { 'autoplay': 1 }
       });
-       
       //console.log("player:"+player[cont]);
+      player[cont].addEventListener("onReady", function(res){
+          res.target.stopVideo().clearVideo();
+      });
       player[cont].addEventListener("onStateChange", function(res){
          //console.log(res.data);
          //console.log("playing");
@@ -451,8 +455,24 @@
             <?php endif; ?>
             
             <?php if($displays_videos == "pull"): ?>
+              player[contVideo].seekTo(0, false).stopVideo().clearVideo();
               proximoVideo();
               pareiCarrossel();
+              setTimeout(function(){
+                //console.log(contVideo);
+                //console.log(quantVideos);
+                if(contVideo >= quantVideos){
+                  contVideo=0;
+                  player[contVideo].seekTo(0, false).stopVideo().clearVideo();
+                }else{
+                  setTimeout(function(){  
+                    contVideo++;
+                    //player[contVideo].playVideo();
+                    player[contVideo].clearVideo().playVideo();
+                  },200);
+                };
+              }, 1000);
+              
             <?php endif; ?>
             
            break;
@@ -472,6 +492,10 @@
               <?php if(count($displays["destaque-videos"])>1):?>
                 recomecaCarrossel();
               <?php endif; ?>
+            <?php endif; ?>
+            
+            <?php if($displays_videos == "pull"): ?>
+              pareiCarrossel();
             <?php endif; ?> 
              
            break;
@@ -490,21 +514,19 @@
            break;
            
          }
-       <?php if($displays_videos == "destaque"): ?>
+         
          $('.carrossel-videos .pag-bola').mousedown(function() {
             //console.log(playing);
             if(playing)
              playing.pauseVideo();
              pareiCarrossel();
           });
-        <?php endif; ?>
+        
           
           
       });
       <?php if($displays_videos == "pull"): ?>
-        setTimeout(function(){
-          pareiCarrossel();
-        },1800);
+       pareiCarrossel();
       <?php endif; ?>      
       
       
@@ -532,6 +554,7 @@
             
     }
     
+    
     var contVideo = 0;
     proximoVideo = function(){
       
@@ -544,21 +567,10 @@
         proximo = $(atual).next();
       }
       // Simula o click do mï¿½todo "changeAbas"
-      //console.log(contVideo);
-      //console.log(quantVideos);
+      
       $(proximo).find('a').click();
       
-        
       
-      setTimeout(function(){
-        if(contVideo >= quantVideos){
-          contVideo=0;
-          player[contVideo].seekTo(0, false);
-        }else{ 
-          contVideo++;
-          player[contVideo].playVideo();
-        };
-      }, 800);      
     }
       
 </script>
