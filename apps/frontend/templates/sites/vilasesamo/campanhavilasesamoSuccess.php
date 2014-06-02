@@ -27,7 +27,7 @@
   </section>
   <!--section-->
   <section  class="campanhasuccess" >
-   <?php include_partial_from_folder('sites/vilasesamo', 'global/form-campanha-sem-anexo', array("site" => $site,  "parent" => $section->Parent)) ?>
+   <?php include_partial_from_folder('sites/vilasesamo', 'global/form-campanha-anexo', array("site" => $site,  "parent" => $section->Parent)) ?>
   </section>
   <!--section-->
   
@@ -38,7 +38,7 @@
         <!--primeiro grupo - ativo no mes -->
         <?php
           //$sectionCampaign = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(), $campaign->getSlug());
-          $sectionCampaign = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(), "brincando-em-familia");
+          $sectionCampaign = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(), "brincando-na-comunidade");
           $blocks = Doctrine_Query::create()
             ->select('b.*')
             ->from('Block b, Section s')
@@ -60,13 +60,13 @@
                  <?php echo $section->Parent->getTitle();?>
                 </a>
               </div>
-              <div id="collapseOfMonth" class="accordion-body collapse" style="height: 0px;">
+         		<div id="collapseOfMonth" class="accordion-body collapse" style="height: 0px;">
                 <div class="accordion-inner">
                   <ul id="container" class="row-fluid">
                     
                          <?php foreach($displays_enviados['enviados'] as $k=>$ai): ?>
                           <li class="span4 element">
-                            <a id="texto<?php echo $k ?>" data-number="<?php echo $k?>" class="fancybox texto" rel="gallery1" href="#" title="<?php echo $ai->Asset->getDescription() ?>" aria-label="<?php echo $ai->Asset->getDescription() ?>">
+                            <a id="texto<?php echo $k ?>" data-number="<?php echo $k?>" class="fancybox texto" rel="gallery" href="#" title="<?php echo $ai->Asset->getDescription() ?>" aria-label="<?php echo $ai->Asset->getDescription() ?>">
                               <div class="container-image"> 
                                 <img src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/thumb.jpg" alt="">
                               </div>
@@ -79,26 +79,22 @@
                         <?php endforeach; ?>
                         
 			                <script>
-											  //$(".fancybox").fancybox();
-											  setTimeout(function(){
-											  	$('.fancybox.texto').each(function(i){
-											      var $i = $('#texto'+i+' .conteudoTexto');
-											      console.log($('#texto'+i+' .conteudoTexto'));
-														  $("#texto"+i).fancybox({
-													       	content: $i,
+														  $(".fancybox").fancybox({
 													       	beforeShow : function() {
 													         $('.fancybox-skin').addClass('c1');
 													   		 },
+													   		 afterLoad   : function() {
+													   		  this.content = this.element.context.lastElementChild.innerHTML;
+													   		  $('.fancybox-inner').addClass('conteudoTexto').show();
+                                 },
 													   		 helpers : {
 													            title: {
 													                type: 'over'
 													            }
 													          }
 													      });
-														});
-														
-														console.log("fancy aplicado");
-											    },3000); 
+													      
+														 
 											     
 											</script>
                       

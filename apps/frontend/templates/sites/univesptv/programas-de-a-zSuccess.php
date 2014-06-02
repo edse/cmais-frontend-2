@@ -172,9 +172,20 @@
             			<?php if (count($programs) > 0): ?>
             			<ul>
             				<?php foreach($programs as $p): ?>
+            						<?php
+													$homepage = array("home", "index", "homepage");
+													$site_sections = $p->Site->getSections();
+													$show_program = FALSE;
+													
+													foreach ($site_sections as $key => $ss) if(in_array($ss->slug, $homepage))  $show_program = TRUE;
+													
+													if($show_program):
+            						?> 
+            					
                             <li>
                               <a href="<?php echo str_replace("tvcultura.cmais.com.br/", "", $p->retriveUrl()); ?>"><?php echo $p->getTitle(); ?><?php if ($p->getImageIcon() || $p->getSchedule()): ?><span><p style="min-height:80px"><?php if ($p->getImageIcon()): ?><img class="logo" src="http://midia.cmais.com.br/programs/<?php echo $p->getImageIcon(); ?>" /><?php endif; ?></p><img class="seta" src="http://cmais.com.br/portal/images/ico-bg-indiceOver.png" /><p><?php echo $p->getSchedule(); ?></p></span><?php endif; ?></a>
                             </li>
+                            <?php endif; ?>
                             <?php endforeach; ?>
                         </ul>
                         <?php else: ?>

@@ -139,7 +139,18 @@ $prevDateUrl = "http://univesptv.cmais.com.br/programacao/".str_replace("/","-",
                     <p class="bold"><?php //echo $d->AssetBroadcast->getHeadline() ?></p>
                     <p class="bold"><?php //echo $d->AssetBroadcast->getHeadlineLong() ?></p>
                     -->
-                    <a class="site" href="<?php echo $d->retriveUrl() ?>">ir ao site</a>
+                   	 <?php
+												$homepage = array("home", "index", "homepage");
+												$site_sections = $d->Program->Site->getSections();
+												$show_program = FALSE;
+												
+												foreach ($site_sections as $key => $ss) if(in_array($ss->slug, $homepage))  $show_program = TRUE;
+												
+												if($show_program):
+		        					?>
+                    			<a class="site" href="<?php echo $d->retriveUrl() ?>">ir ao site</a>
+                    	<?php endif; ?>
+                    	
                     <?php if($d->getIsLive()): ?>
                     <br />
                     <a class="site" href="http://univesptv.cmais.com.br">assista ao vivo pela web</a>
