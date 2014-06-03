@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://cmais.com.br/portal/js/bootstrap/css/bootstrap-responsive.min.css">
     <link rel="stylesheet" href="http://cmais.com.br/portal/css/geral.css" type="text/css" />
-    <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/central-de-relacionamento.css" type="text/css" />
+    <link rel="stylesheet" href="http://cmais.com.br/portal/css/tvcultura/sites/fpa-crm.css" type="text/css" />
    
     <?php use_helper('I18N', 'Date') ?>
     <?php include_partial_from_folder('blocks', 'global/menu', array('site' => $site, 'mainSite' => $mainSite, 'asset' => $asset, 'section' => $section)) ?>
