@@ -460,18 +460,20 @@
               player[contVideo].seekTo(0, false).stopVideo().clearVideo();
               proximoVideo();
               pareiCarrossel();
-              //console.log(contVideo);
-              //console.log(quantVideos);
-              if(contVideo >= quantVideos){
-                contVideo=0;
-                player[contVideo].seekTo(0, false).stopVideo().clearVideo();
-              }else{
-                setTimeout(function(){
-                  contVideo++;
-                  res.target.playVideo();
-                },800);  
-              };
-              
+              setTimeout(function(){
+                //console.log(contVideo);
+                //console.log(quantVideos);
+                if(contVideo >= quantVideos){
+                  contVideo=0;
+                  player[contVideo].seekTo(0, false).stopVideo().clearVideo();
+                }else{
+                  setTimeout(function(){  
+                    contVideo++;
+                    //player[contVideo].playVideo();
+                    player[contVideo].playVideo();
+                  },50);
+                };
+              }, 500);
               
             <?php endif; ?>
             
