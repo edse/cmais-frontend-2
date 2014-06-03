@@ -54,13 +54,13 @@
                         <p class="help-block">Entre com seu nome completo.</p>
                       </div>
                     </div>
-                    <div class="control-group">
+                    <div class="control-group selecionavel">
                       <label class="control-label" for="f2_cod_faixaetaria">Idade <span class="atencao">*</span></label>
                       <div class="controls">
                         <select id="f2_cod_faixaetaria" name="f2_cod_faixaetaria"></select>
                       </div>
                     </div>
-                    <div class="control-group">
+                    <div class="control-group selecionavel">
                       <label class="control-label" for="f2_cod_sexo">Sexo <span class="atencao">*</span></label>
                       <div class="controls">
                         <select id="f2_cod_sexo" name="f2_cod_sexo"></select>
@@ -68,13 +68,13 @@
                     </div>
                     
                     <div id="f2_brasil">
-                      <div class="control-group">
+                      <div class="control-group selecionavel">
                         <label class="control-label" for="f2_estado">Estado <span class="atencao">*</span></label>
                         <div class="controls">
                           <select id="f2_estado" name="f2_estado" onchange="municipios('f2');" onfocus="municipios('f2');"></select>
                         </div>
                       </div>
-                      <div class="control-group">
+                      <div class="control-group selecionavel">
                         <label class="control-label" for="f2_local">Cidade <span class="atencao">*</span></label>
                         <div class="controls">
                           <select id="f2_local" name="f2_local"></select>

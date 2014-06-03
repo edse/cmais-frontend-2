@@ -87,11 +87,10 @@
 .texto-verde{color:#106d41 !important}
 #row1, #row2, #row3, #row4, #row5, #row6, #row7{margin:7px auto;}
 #email-central .pageheader{margin:0 0 10px 0;border: none;}
-#email-central input[type=text]{width: 295px;*margin-left:-120px;}
+#email-central input[type=text]{width: 95%;*margin-left:-120px;}
 #email-central input[type=checkbox]{width: 30px;}
 #email-central textarea{*margin-left:-120px;}
 #email-central .botoes-form{margin-left:120px;}
-#email-central .help-block{width:350px;}
 #email-central .cancelar{color:#333 !important;text-decoration:none;}
 #email-central .control-group.success .help-block{margin-top:10px;}
 #email-central .form-horizontal .control-label{min-width: 60px;text-align: left;width: auto;}
@@ -112,6 +111,8 @@
 /*NOSSA LINGUA*/
 #row1 .page-header h1{display: none;}
 #row1 .page-header{border:none;}
+.alert{width: 95%;}
+#email-central .control-group.selecionavel{padding: 0;width: 50%;margin: 0;float: left;}
 
 
 
