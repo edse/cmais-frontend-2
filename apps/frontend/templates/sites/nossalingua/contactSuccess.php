@@ -71,7 +71,6 @@
             <!-- ESQUERDA -->
             <div id="esquerda" class="grid2">
               <div class="contato grid2">
-
                 <h3 class="tit-pagina grid3"><?php echo $section->getTitle() ?></h3>  
                 <p><?php echo $section->getDescription()?></p>
 
