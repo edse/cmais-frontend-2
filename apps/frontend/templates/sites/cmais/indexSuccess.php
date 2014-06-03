@@ -468,7 +468,7 @@
               }else{
                 setTimeout(function(){
                   contVideo++;
-                  player[contVideo].playVideo();
+                  res.target.playVideo();
                 },800);  
               };
               
