@@ -86,7 +86,7 @@
 .texto-preto{color:#333 !important;}
 .texto-verde{color:#106d41 !important}
 #row1, #row2, #row3, #row4, #row5, #row6, #row7{margin:7px auto;}
-#email-central .pageheader{margin:0 0 10px 0;}
+#email-central .pageheader{margin:0 0 10px 0;border: none;}
 #email-central input[type=text]{width: 295px;*margin-left:-120px;}
 #email-central input[type=checkbox]{width: 30px;}
 #email-central textarea{*margin-left:-120px;}
@@ -94,8 +94,8 @@
 #email-central .help-block{width:350px;}
 #email-central .cancelar{color:#333 !important;text-decoration:none;}
 #email-central .control-group.success .help-block{margin-top:10px;}
-#email-central .form-horizontal .control-label{width:115px;}
-#email-central .form-horizontal .controls{margin-left:122px;}
+#email-central .form-horizontal .control-label{min-width: 60px;text-align: left;width: auto;}
+#email-central .form-horizontal .controls{margin-left: 60px;}
 #email-central .row, #maisinfo, #f4_maisinfo, #f3_maisinfo, #f2_maisinfo {display: none;}
 #email-central label.valid {width: 24px; height: 24px; background: url(http://cmais.com.br/portal/images/valid.png) center center no-repeat; display: inline-block; text-indent: -9999px;}
 #email-central label.error {font-weight: bold; overflow:hidden; padding: 2px 8px;font-size: 11px;margin: -2px 0 -3px -7px}
@@ -108,3 +108,9 @@
 /* CONTENT */
 #img-destaque{width: 972px; height: 200px; margin:0 0 20px;overflow: hidden;}
 /* /CONTENT */
+
+/*NOSSA LINGUA*/
+#row1 #email-central .pageheader h1{display: none;}
+
+
+
