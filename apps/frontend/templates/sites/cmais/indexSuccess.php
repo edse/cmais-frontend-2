@@ -465,14 +465,14 @@
                 //console.log(quantVideos);
                 if(contVideo >= quantVideos){
                   contVideo=0;
-                  player[contVideo].seekTo(0, false).stopVideo().clearVideo();
+                  //player[contVideo].seekTo(0, false).stopVideo().clearVideo();
                   playing.seekTo(0, false).stopVideo().clearVideo();
                 }else{
                   setTimeout(function(){  
                     contVideo++;
                     //player[contVideo].playVideo();
-                    player[contVideo].playVideo();
-                    playing.playVideo()
+                    //player[contVideo].playVideo();
+                    playing.playVideo();
                   },50);
                 };
               }, 1000);
