@@ -473,7 +473,7 @@
                     player[contVideo].playVideo();
                   },50);
                 };
-              }, 500);
+              }, 1000);
               
             <?php endif; ?>
             
