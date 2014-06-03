@@ -468,8 +468,8 @@
                   setTimeout(function(){  
                     contVideo++;
                     //player[contVideo].playVideo();
-                    player[contVideo].clearVideo().playVideo();
-                  },200);
+                    player[contVideo].playVideo();
+                  },50);
                 };
               }, 1000);
               
