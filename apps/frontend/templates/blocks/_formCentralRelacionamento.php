@@ -204,6 +204,7 @@
                       <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader2" />
                       <button type="submit" class="btn btn-success" id="btn2">Enviar Cadastro</button>
                     </div>
+                    </div>
                   </fieldset>
                 </form>
               </div>
