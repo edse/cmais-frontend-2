@@ -426,7 +426,9 @@
       });
       //console.log("player:"+player[cont]);
       player[cont].addEventListener("onReady", function(res){
+        setTimeout(function(){
           player[cont].stopVideo().clearVideo();
+        }, 100);  
       });
       player[cont].addEventListener("onStateChange", function(res){
          //console.log(res.data);
