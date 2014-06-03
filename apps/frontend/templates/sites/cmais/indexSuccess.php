@@ -572,7 +572,7 @@
             contVideo++;
             player[contVideo].playVideo();
             //playing.playVideo();
-          },50);
+          },800);
         };
       }, 1000);
       
