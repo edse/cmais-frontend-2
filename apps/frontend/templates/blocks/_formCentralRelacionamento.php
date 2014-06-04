@@ -54,13 +54,13 @@
                         <p class="help-block">Entre com seu nome completo.</p>
                       </div>
                     </div>
-                    <div class="control-group">
+                    <div class="control-group selecionavel">
                       <label class="control-label" for="f2_cod_faixaetaria">Idade <span class="atencao">*</span></label>
                       <div class="controls">
                         <select id="f2_cod_faixaetaria" name="f2_cod_faixaetaria"></select>
                       </div>
                     </div>
-                    <div class="control-group">
+                    <div class="control-group selecionavel">
                       <label class="control-label" for="f2_cod_sexo">Sexo <span class="atencao">*</span></label>
                       <div class="controls">
                         <select id="f2_cod_sexo" name="f2_cod_sexo"></select>
@@ -68,13 +68,13 @@
                     </div>
                     
                     <div id="f2_brasil">
-                      <div class="control-group">
+                      <div class="control-group selecionavel">
                         <label class="control-label" for="f2_estado">Estado <span class="atencao">*</span></label>
                         <div class="controls">
                           <select id="f2_estado" name="f2_estado" onchange="municipios('f2');" onfocus="municipios('f2');"></select>
                         </div>
                       </div>
-                      <div class="control-group">
+                      <div class="control-group selecionavel">
                         <label class="control-label" for="f2_local">Cidade <span class="atencao">*</span></label>
                         <div class="controls">
                           <select id="f2_local" name="f2_local"></select>
@@ -102,107 +102,11 @@
                         <select id="f2_cod_recepcaodesinal" name="f2_cod_recepcaodesinal"></select>
                       </div>
                     </div>
-                    <?php
-                    /*
                     <div class="control-group">
-                      <label class="control-label" for="f2_mais">Mais informações</label>
-                      <div class="controls">
-                        <label class="checkbox">
-                          <input type="checkbox" id="f2_mais" name="f2_mais" value="1" onclick="toggleInfo();">
-                          Para facilitar ainda mais nosso relacionamento
-                        </label>
-                      </div>
-                    </div>
-                    
-                    <div id="f2_maisinfo">
-                      <div class="control-group">
-                        <label class="control-label" for="f2_cep">CEP <span class="atencao">*</span></label>
-                        <div class="controls">
-                          <input type="text" class="input-xlarge" id="f2_cep" name="f2_cep" onblur="cep(this.value);">
-                          <p class="help-block">Não sabe seu CEP? <a href="http://www.buscacep.correios.com.br/" target="_blank" style="color:#00ccff">Clique aqui</a> e consulte o Correio.</p>
-                        </div>
-                      </div>
-                      <div class="control-group">
-                        <label class="control-label" for="f2_endereco">Endereço</label>
-                        <div class="controls">
-                          <input type="text" class="input-xlarge" id="f2_endereco" name="f2_endereco">
-                        </div>
-                      </div>
-                      <div class="control-group">
-                        <label class="control-label" for="f2_numero">Número</label>
-                        <div class="controls">
-                          <input type="text" class="input-xlarge" id="f2_numero" name="f2_numero">
-                        </div>
-                      </div>
-                      <div class="control-group">
-                        <label class="control-label" for="f2_complemento">Complemento</label>
-                        <div class="controls">
-                          <input type="text" class="input-xlarge" id="f2_complemento" name="f2_complemento">
-                        </div>
-                      </div>
-                      <div class="control-group">
-                        <label class="control-label" for="f2_telefone">Telefone</label>
-                        <div class="controls">
-                          <input type="text" class="input-xlarge" id="f2_telefone" name="f2_telefone" placeholder="(xx) XXXX-XXXX">
-                        </div>
-                      </div>
-                      <div class="control-group">
-                        <label class="control-label" for="f2_bairro">Bairro</label>
-                        <div class="controls">
-                          <input type="text" class="input-xlarge" id="f2_bairro" name="f2_bairro">
-                        </div>
-                      </div>
-                      <div class="control-group">
-                        <label class="control-label" for="f2_twitter">Twitter</label>
-                        <div class="controls">
-                          <input type="text" class="input-xlarge" id="f2_twitter" name="f2_twitter">
-                        </div>
-                      </div>
-                    </div>
-                    <!-- /#maisinfo -->
-                    <div class="control-group">
-                      <label class="control-label" for="f2_sms">SMS</label>
-                      <div class="controls">
-                        <label class="checkbox">
-                          <input type="checkbox" id="f2_sms" name="f2_sms" value="true">
-                          Permito o envio de SMS
-                        </label>
-                      </div>
-                    </div>
-                    <div class="control-group">
-                      <label class="control-label" for="f2_newsletter">Newsletter</label>
-                      <div class="controls">
-                        <label class="checkbox">
-                          <input type="checkbox" id="f2_newsletter" name="f2_newsletter" value="true">
-                          Permito o envio de promoções e novidades via e-mail
-                        </label>
-                      </div>
-                    </div>
-                    <div class="control-group">
-                      <label class="control-label" for="f2_convite">Convite</label>
-                      <div class="controls">
-                        <label class="checkbox">
-                          <input type="checkbox" id="f2_convite" name="f2_convite" value="true">
-                          Permito o envio de convites
-                        </label>
-                      </div>
-                    </div>
-                    <div class="control-group">
-                      <label class="control-label" for="f2_terceiros">Terceiros</label>
-                      <div class="controls">
-                        <label class="checkbox">
-                          <input type="checkbox" id="f2_terceiros" name="f2_terceiros" value="true">
-                          Permito o envio de informações para terceiros
-                        </label>
-                      </div>
-                    </div>
-                     * 
-                     */
-                    ?>
-                    <div class="control-group">
-                    <div class="botoes-form">
-                      <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader2" />
-                      <button type="submit" class="btn btn-success" id="btn2">Enviar Cadastro</button>
+	                    <div class="botoes-form">
+	                      <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader2" />
+	                      <button type="submit" class="btn btn-success" id="btn2">Enviar Cadastro</button>
+	                    </div>
                     </div>
                   </fieldset>
                 </form>
@@ -413,187 +317,187 @@
                       </div>
                       <?php endif; ?>
                       <div id="f4_maisinfo">
-                      <!-- salvar alteracoes -->
-                      <div class="salvar-alteracoes">
-                        lembre-se de clicar em salvar alterações
-                      </div>
-                      <!-- /salvar alteracoes -->
-                        <hr />
-                        <div class="control-group">
-                          <label class="control-label" for="f4_nome">Nome</label>
-                          <div class="controls">
-                            <input type="text" class="input-xlarge" id="f4_nome" name="f4_nome">
-                            <p class="help-block">Entre com seu nome completo.</p>
-                          </div>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label" for="f4_cod_faixaetaria">Idade</label>
-                          <div class="controls">
-                            <select id="f4_cod_faixaetaria" name="f4_cod_faixaetaria"></select>
-                          </div>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label" for="f4_cod_sexo">Sexo</label>
-                          <div class="controls">
-                            <select id="f4_cod_sexo" name="f4_cod_sexo"></select>
-                          </div>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label" for="f4_cod_recepcaodesinal">Como recebe sinal da TV Cultura SP</label>
-                          <div class="controls">
-                            <select id="f4_cod_recepcaodesinal" name="f4_cod_recepcaodesinal"></select>
-                          </div>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label" for="f4_exterior">Reside no exterior?</label>
-                          <div class="controls">
-                            <input type="checkbox" name="f4_exterior" id="f4_exterior" value="1" onchange="toggleExterior();" />
-                            <!-- <select id="f2_exterior" name="f2_exterior" onchange="toggleExterior();"></select> -->
-                          </div>
-                        </div>
-                        <div class="control-group f4_exterior">
-                          <label class="control-label" for="f4_localexterior">Pais</label>
-                          <div class="controls">
-                            <input type="text" class="input-xlarge" id="f4_localexterior" name="f4_localexterior">
-                            <!-- <p class="help-block">Pais em que reside <code>Chile</code></p> -->
-                          </div>
-                        </div>
-                        <div id="f4_brasil">
-                          <div class="control-group">
-                            <label class="control-label" for="f4_estado">Estado</label>
-                            <div class="controls">
-                              <select id="f4_estado" name="f4_estado" onchange="municipios('f4');"></select>
-                            </div>
-                          </div>
-                          <div class="control-group">
-                            <label class="control-label" for="f4_local">Cidade</label>
-                            <div class="controls">
-                              <select id="f4_local" name="f4_local"></select> 
-                            </div>
-                          </div>
-                        </div><!-- /#brasil -->
-                        
-                        <div class="control-group">
-                          <label class="control-label" for="f4_endereco">Endereço</label> 
-                          <div class="controls">
-                            <input type="text" class="input-xlarge" id="f4_endereco" name="f4_endereco">
-                          </div>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label" for="f4_numero">Número</label>
-                          <div class="controls">
-                            <input type="text" class="input-xlarge" id="f4_numero" name="f4_numero">
-                          </div>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label" for="f4_complemento">Complemento</label>
-                          <div class="controls">
-                            <input type="text" class="input-xlarge" id="f4_complemento" name="f4_complemento"> 
-                          </div>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label" for="f4_cep">CEP</label>
-                          <div class="controls">
-                            <input type="text" class="input-xlarge" id="f4_cep" name="f4_cep">
-                            <p class="help-block">Não sabe seu CEP? <a href="http://www.buscacep.correios.com.br/" target="_blank" style="color:#00ccff">Clique aqui</a> e consulte o Correio.</p>
-                          </div>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label" for="f4_bairro">Bairro</label>
-                          <div class="controls">
-                            <input type="text" class="input-xlarge" id="f4_bairro" name="f4_bairro">
-                          </div>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label" for="f4_telefone">Telefone</label> 
-                          <div class="controls">
-                            <input type="text" class="input-xlarge" id="f4_telefone" name="f4_telefone" placeholder="(xx) XXXX-XXXX">
-                          </div>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label" for="f4_twitter">Twitter</label>
-                          <div class="controls">
-                            <input type="text" class="input-xlarge" id="f4_twitter" name="f4_twitter">
-                          </div>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label" for="f4_sms">SMS</label>
-                          <div class="controls">
-                            <label class="checkbox">
-                              <input type="checkbox" id="f4_sms" name="f4_sms" value="true">
-                              Permito o envio de SMS
-                            </label>
-                          </div>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label" for="f4_newsletter">Newsletter</label>
-                          <div class="controls">
-                            <label class="checkbox">
-                              <input type="checkbox" id="f4_newsletter" name="f4_newsletter" value="true">
-                              Permito o envio de promoções e novidades via e-mail
-                            </label>
-                          </div>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label" for="f4_convite">Convite</label>
-                          <div class="controls">
-                            <label class="checkbox">
-                              <input type="checkbox" id="f4_convite" name="f4_convite" value="true">
-                              Permito o envio convites
-                            </label>
-                          </div>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label" for="f4_terceiros">Terceiros</label>
-                          <div class="controls">
-                            <label class="checkbox">
-                              <input type="checkbox" id="f4_terceiros" name="f4_terceiros" value="true">
-                              Permito o envio de informações para terceiros
-                            </label>
-                          </div>
-                        </div>
-        
-                        <hr />
-                        <!-- salvar alteracoes -->
-                        <div class="salvar-alteracoes">
-                          lembre-se de clicar em salvar alterações
-                        </div>
-                        <!-- /salvar alteracoes -->
+	                      <!-- salvar alteracoes -->
+	                      <div class="salvar-alteracoes">
+	                        lembre-se de clicar em salvar alterações
+	                      </div>
+	                      <!-- /salvar alteracoes -->
+	                        <hr />
+	                        <div class="control-group">
+	                          <label class="control-label" for="f4_nome">Nome</label>
+	                          <div class="controls">
+	                            <input type="text" class="input-xlarge" id="f4_nome" name="f4_nome">
+	                            <p class="help-block">Entre com seu nome completo.</p>
+	                          </div>
+	                        </div>
+	                        <div class="control-group">
+	                          <label class="control-label" for="f4_cod_faixaetaria">Idade</label>
+	                          <div class="controls">
+	                            <select id="f4_cod_faixaetaria" name="f4_cod_faixaetaria"></select>
+	                          </div>
+	                        </div>
+	                        <div class="control-group">
+	                          <label class="control-label" for="f4_cod_sexo">Sexo</label>
+	                          <div class="controls">
+	                            <select id="f4_cod_sexo" name="f4_cod_sexo"></select>
+	                          </div>
+	                        </div>
+	                        <div class="control-group">
+	                          <label class="control-label" for="f4_cod_recepcaodesinal">Como recebe sinal da TV Cultura SP</label>
+	                          <div class="controls">
+	                            <select id="f4_cod_recepcaodesinal" name="f4_cod_recepcaodesinal"></select>
+	                          </div>
+	                        </div>
+	                        <div class="control-group">
+	                          <label class="control-label" for="f4_exterior">Reside no exterior?</label>
+	                          <div class="controls">
+	                            <input type="checkbox" name="f4_exterior" id="f4_exterior" value="1" onchange="toggleExterior();" />
+	                            <!-- <select id="f2_exterior" name="f2_exterior" onchange="toggleExterior();"></select> -->
+	                          </div>
+	                        </div>
+	                        <div class="control-group f4_exterior">
+	                          <label class="control-label" for="f4_localexterior">Pais</label>
+	                          <div class="controls">
+	                            <input type="text" class="input-xlarge" id="f4_localexterior" name="f4_localexterior">
+	                            <!-- <p class="help-block">Pais em que reside <code>Chile</code></p> -->
+	                          </div>
+	                        </div>
+	                        <div id="f4_brasil">
+	                          <div class="control-group">
+	                            <label class="control-label" for="f4_estado">Estado</label>
+	                            <div class="controls">
+	                              <select id="f4_estado" name="f4_estado" onchange="municipios('f4');"></select>
+	                            </div>
+	                          </div>
+	                          <div class="control-group">
+	                            <label class="control-label" for="f4_local">Cidade</label>
+	                            <div class="controls">
+	                              <select id="f4_local" name="f4_local"></select> 
+	                            </div>
+	                          </div>
+	                        </div><!-- /#brasil -->
+	                        
+	                        <div class="control-group">
+	                          <label class="control-label" for="f4_endereco">Endereço</label> 
+	                          <div class="controls">
+	                            <input type="text" class="input-xlarge" id="f4_endereco" name="f4_endereco">
+	                          </div>
+	                        </div>
+	                        <div class="control-group">
+	                          <label class="control-label" for="f4_numero">Número</label>
+	                          <div class="controls">
+	                            <input type="text" class="input-xlarge" id="f4_numero" name="f4_numero">
+	                          </div>
+	                        </div>
+	                        <div class="control-group">
+	                          <label class="control-label" for="f4_complemento">Complemento</label>
+	                          <div class="controls">
+	                            <input type="text" class="input-xlarge" id="f4_complemento" name="f4_complemento"> 
+	                          </div>
+	                        </div>
+	                        <div class="control-group">
+	                          <label class="control-label" for="f4_cep">CEP</label>
+	                          <div class="controls">
+	                            <input type="text" class="input-xlarge" id="f4_cep" name="f4_cep">
+	                            <p class="help-block">Não sabe seu CEP? <a href="http://www.buscacep.correios.com.br/" target="_blank" style="color:#00ccff">Clique aqui</a> e consulte o Correio.</p>
+	                          </div>
+	                        </div>
+	                        <div class="control-group">
+	                          <label class="control-label" for="f4_bairro">Bairro</label>
+	                          <div class="controls">
+	                            <input type="text" class="input-xlarge" id="f4_bairro" name="f4_bairro">
+	                          </div>
+	                        </div>
+	                        <div class="control-group">
+	                          <label class="control-label" for="f4_telefone">Telefone</label> 
+	                          <div class="controls">
+	                            <input type="text" class="input-xlarge" id="f4_telefone" name="f4_telefone" placeholder="(xx) XXXX-XXXX">
+	                          </div>
+	                        </div>
+	                        <div class="control-group">
+	                          <label class="control-label" for="f4_twitter">Twitter</label>
+	                          <div class="controls">
+	                            <input type="text" class="input-xlarge" id="f4_twitter" name="f4_twitter">
+	                          </div>
+	                        </div>
+	                        <div class="control-group">
+	                          <label class="control-label" for="f4_sms">SMS</label>
+	                          <div class="controls">
+	                            <label class="checkbox">
+	                              <input type="checkbox" id="f4_sms" name="f4_sms" value="true">
+	                              Permito o envio de SMS
+	                            </label>
+	                          </div>
+	                        </div>
+	                        <div class="control-group">
+	                          <label class="control-label" for="f4_newsletter">Newsletter</label>
+	                          <div class="controls">
+	                            <label class="checkbox">
+	                              <input type="checkbox" id="f4_newsletter" name="f4_newsletter" value="true">
+	                              Permito o envio de promoções e novidades via e-mail
+	                            </label>
+	                          </div>
+	                        </div>
+	                        <div class="control-group">
+	                          <label class="control-label" for="f4_convite">Convite</label>
+	                          <div class="controls">
+	                            <label class="checkbox">
+	                              <input type="checkbox" id="f4_convite" name="f4_convite" value="true">
+	                              Permito o envio convites
+	                            </label>
+	                          </div>
+	                        </div>
+	                        <div class="control-group">
+	                          <label class="control-label" for="f4_terceiros">Terceiros</label>
+	                          <div class="controls">
+	                            <label class="checkbox">
+	                              <input type="checkbox" id="f4_terceiros" name="f4_terceiros" value="true">
+	                              Permito o envio de informações para terceiros
+	                            </label>
+	                          </div>
+	                        </div>
+	        
+	                        <hr />
+	                        <!-- salvar alteracoes -->
+	                        <div class="salvar-alteracoes">
+	                          lembre-se de clicar em salvar alterações
+	                        </div>
+	                        <!-- /salvar alteracoes -->
                         
                       </div><!-- /#maisinfo -->
         
                       
                       <div id="message">
                       
-                      <div class="control-group">
-                        <label class="control-label" for="f4_cod_veiculo">Área / Emissora</label>
-                        <div class="controls">
-                          <select name="f4_cod_veiculo" id="f4_cod_veiculo" onchange="contas();">
-                            <option value="--"></option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="control-group f4">
-                        <label class="control-label" for="f4_cod_programa">Selecione</label>
-                        <div class="controls">
-                          <select name="f4_cod_programa" id="f4_cod_programa" onchange="assuntos();">
-                            <option value="--" selected="selected">--</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="control-group f4">
-                        <label class="control-label" for="f4_cod_assunto">Assunto</label>
-                        <div class="controls">
-                          <select name="f4_cod_assunto" id="f4_cod_assunto"></select>
-                        </div>
-                      </div>
-                      <div class="control-group f4">
-                        <label class="control-label" for="f4_mensagem">Mensagem</label>
-                        <div class="controls">
-                          <textarea class="input-xlarge" id="f4_mensagem" name="f4_mensagem" rows="5" onkeydown="limitText(this,1000,'#textCounter');"></textarea>
-                          <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>
-                        </div>
-                      </div>
+	                      <div class="control-group">
+	                        <label class="control-label" for="f4_cod_veiculo">Área / Emissora</label>
+	                        <div class="controls">
+	                          <select name="f4_cod_veiculo" id="f4_cod_veiculo" onchange="contas();">
+	                            <option value="--"></option>
+	                          </select>
+	                        </div>
+	                      </div>
+	                      <div class="control-group f4">
+	                        <label class="control-label" for="f4_cod_programa">Selecione</label>
+	                        <div class="controls">
+	                          <select name="f4_cod_programa" id="f4_cod_programa" onchange="assuntos();">
+	                            <option value="--" selected="selected">--</option>
+	                          </select>
+	                        </div>
+	                      </div>
+	                      <div class="control-group f4">
+	                        <label class="control-label" for="f4_cod_assunto">Assunto</label>
+	                        <div class="controls">
+	                          <select name="f4_cod_assunto" id="f4_cod_assunto"></select>
+	                        </div>
+	                      </div>
+	                      <div class="control-group f4">
+	                        <label class="control-label" for="f4_mensagem">Mensagem</label>
+	                        <div class="controls">
+	                          <textarea class="input-xlarge" id="f4_mensagem" name="f4_mensagem" rows="5" onkeydown="limitText(this,1000,'#textCounter');"></textarea>
+	                          <p class="txt-10"><span id="textCounter">1000</span> caracteres restantes</p>
+	                        </div>
+	                      </div>
         
                       </div><!-- /#message -->
                       
@@ -1466,7 +1370,7 @@
                 }
                 </script>
               <!--form envio-->
-              </div>
+             
                 
 
             </div>
