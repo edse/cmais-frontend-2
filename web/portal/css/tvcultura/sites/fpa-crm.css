@@ -113,10 +113,10 @@
 #row1 .page-header{border:none;}
 #row1, #row2 #email-central .form-horizontal .controls{margin-left: 60px;}
 #row4 .form-horizontal .controls{margin-left: 110px;}
-#row4 input[type=text]{width: 90%;height: 30px;*margin-left:-120px;}
+#row4 input[type=text]{width: 100%;height: 30px;*margin-left:-120px;}
 #row4 .form-horizontal .control-group {margin-bottom: 10px;width: 90%;}
-#row4 textarea {width: 90%;}
-.alert{width: 90%;}
+#row4 textarea {width: 100%;}
+.alert{width: 100%;}
 #email-central .control-group.selecionavel{padding: 0;width: 50%;margin: 10px 0;float: left;}
 
 
