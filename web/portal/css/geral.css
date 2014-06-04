@@ -276,7 +276,7 @@ z-index: 10000;
 /* /curtir */
 
 /* horario */
-#barra-site #horario { width: 300px; float:right; margin-top:35px; }
+#barra-site #horario { width: 340px; float:right; margin-top:35px; }/*alterado por não caber - 20/05/2014*/
 #barra-site #horario p { font-size: 15px; font-weight:bold; color:#000; text-align:right; }/*alterado a font-size:16px para 15px por não caber - 20/05/2014*/
 /* /horario */
 
