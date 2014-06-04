@@ -186,7 +186,7 @@
                           </div>
                         </div>
                         <div class="control-group selecionavel">
-                          <label class="control-label" for="f3_local">Cidade</label>
+                          <label class="control-label" for="f3_local" style="text-align: right;">Cidade</label>
                           <div class="controls">
                             <select id="f3_local" name="f3_local"></select>
                           </div>
