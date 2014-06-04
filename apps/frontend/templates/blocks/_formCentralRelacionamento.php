@@ -179,13 +179,13 @@
                         </div>
                       </div>
                       <div id="f3_brasil">
-                        <div class="control-group">
+                        <div class="control-group selecionavel">
                           <label class="control-label" for="f3_estado">Estado</label>
                           <div class="controls">
                             <select id="f3_estado" name="f3_estado" onchange="municipios('f3');"></select>
                           </div>
                         </div>
-                        <div class="control-group">
+                        <div class="control-group selecionavel">
                           <label class="control-label" for="f3_local">Cidade</label>
                           <div class="controls">
                             <select id="f3_local" name="f3_local"></select>
