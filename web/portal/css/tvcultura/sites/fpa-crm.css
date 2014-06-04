@@ -111,7 +111,6 @@
 /*NOSSA LINGUA*/
 #row1 .page-header h1{display: none;}
 #row1 .page-header{border:none;}
-#row1, #row2 #email-central .form-horizontal .controls{margin-left: 60px;}
 #row4 .form-horizontal .controls{margin-left: 110px;}
 #row4 input[type=text]{width: 100%;*margin-left:-120px;}
 #row4 .form-horizontal .control-group {margin-bottom: 10px;width: 90%;}
