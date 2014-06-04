@@ -93,7 +93,7 @@
 #email-central .botoes-form{margin-left:120px;}
 #email-central .cancelar{color:#333 !important;text-decoration:none;}
 #email-central .control-group.success .help-block{margin-top:10px;}
-#email-central .form-horizontal .control-label{min-width: 60px;text-align: left;width: auto;}
+#email-central .form-horizontal .control-label{min-width: 60px;text-align: left;width: auto;margin-right:5px}
 #email-central .form-horizontal .controls{margin-left: 60px;}
 #email-central .row, #maisinfo, #f4_maisinfo, #f3_maisinfo, #f2_maisinfo {display: none;}
 #email-central label.valid {width: 24px; height: 24px; background: url(http://cmais.com.br/portal/images/valid.png) center center no-repeat; display: inline-block; text-indent: -9999px;}
@@ -112,10 +112,10 @@
 #row1 .page-header h1{display: none;}
 #row1 .page-header{border:none;}
 #row4 .form-horizontal .controls{margin-left: 110px;}
-#row4 input[type=text]{width: 100%;*margin-left:-120px;}
+#row3,#row4 input[type=text]{width: 100%;*margin-left:-120px;}
 #row4 .form-horizontal .control-group {margin-bottom: 10px;width: 90%;}
 #row4 textarea {width: 100%;}
-.alert{width: width: 100%;}
+.alert{width: 90%;}
 #email-central .control-group.selecionavel{padding: 0;width: 50%;margin: 10px 0;float: left;}
 #row8, #row9{margin: 10px;}
 .page-header {padding-bottom: 9px;}
