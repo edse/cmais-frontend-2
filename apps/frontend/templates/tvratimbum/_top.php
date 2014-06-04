@@ -2,11 +2,11 @@
     <div class="topoBG">
       <div class="topo">
         <h2><a href="/" title="TV Rá Tim Bum">TV R&aacute; Tim Bum</a></h2>
-        <div class="btn-exclusivo">
+        <!--div class="btn-exclusivo">
           <span class="pontaBarra"></span>
           <a href="/conheca-a-tv-ra-tim-bum" title="Conheça a TV Ra Tim Bum">conhe&ccedil;a a TV R&aacute; Tim Bum</a>
           <span class="caudaBarra"></span>
-        </div>
+        </div-->
         <div class="btns-redes">
           <fb:like href="http://www.facebook.com/tvratimbum" layout="button_count" show_faces="false" width="100"></fb:like>
         </div>
