@@ -582,10 +582,12 @@
                     <p><span class="label label-success">cadastro alterado</span></p>
                   </div><!-- /.span -->
                   <div class="alert alert-block alert-success fade in">
-                    <h4 class="alert-heading">Sua mensagem foi enviada!</h4>
+                    <h4 class="alert-heading">Sua cadastro foi alterado!</h4>
                     <p>O que vc quer fazer agora?</p>
-                    <a class="btn btn-success enviar-outra"> Continuar o envio</a>
-                    <a class="btn btn-success change-form" href="javascript:;"> Alterar novamente seu cadastro</a>
+                    <div class="container-button">
+	                    <a class="btn btn-success enviar-outra"> Continuar o envio</a>
+	                    <a class="btn btn-success change-form" href="javascript:;"> Alterar novamente seu cadastro</a>
+                    </div>
                   </div>
                 </div>
                 <!-- /row9 -->
