@@ -1,4 +1,4 @@
-<?php echo $site->getUrl() . ".teste >>>>>>>>"?>
+<?php echo $site->getUrl() . ".teste >>>>>>>>" ?>
 <div id="email-central" class="fundo-cinza collapse in" style="overflow: hidden; clear: both;">
               <!--form envio-->
               <?php if(!isset($_GET["erro"])&& isset($_GET["erro"])!=1):?>
