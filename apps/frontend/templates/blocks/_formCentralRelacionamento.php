@@ -703,7 +703,7 @@
                     email = $('#f4_email2').val();
                     $('#btn6').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
                   })
-                  getUrl()
+                  <?php echo $site->getUrl() ".>>>>>>>>"?>
                   $('#btn4, #btn5').click(function(){
                     email = $('#f4_email2').val();
                     <?php if($site->getType()=="Programa"):?>
