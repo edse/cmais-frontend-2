@@ -707,7 +707,7 @@
                   $('#btn4, #btn5').click(function(){
                     email = $('#f4_email2').val();
                     <?php if($site->getType()=="Programa"):?>
-                    	$('.enviar-outra').attr("href","http://tvcultura.cmais.com.br/central-de-relacionamento?step=4&email="+email);
+                    $('.enviar-outra').attr("href","http://tvcultura1.cmais.com.br/<?php echo $site->getSlug(); ?>/fale-conosco?step=4&email="+email);
                     <?php  elseif($site->getType()=="Programa Radio"): ?>
                     	$('.enviar-outra').attr("href","http://tvcultura1.cmais.com.br/<?php echo $site->getSlug(); ?>/fale-conosco?step=4&email="+email);
                     <?php else:?>
