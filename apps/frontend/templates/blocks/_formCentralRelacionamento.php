@@ -1,3 +1,4 @@
+<?php echo $site->getUrl() ".teste>>>>>>>>"?>
 <div id="email-central" class="fundo-cinza collapse in" style="overflow: hidden; clear: both;">
               <!--form envio-->
               <?php if(!isset($_GET["erro"])&& isset($_GET["erro"])!=1):?>
@@ -703,11 +704,11 @@
                     email = $('#f4_email2').val();
                     $('#btn6').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
                   })
-                  <?php echo $site->getUrl() ".>>>>>>>>"?>
+                  
                   $('#btn4, #btn5').click(function(){
                     email = $('#f4_email2').val();
                     <?php if($site->getType()=="Programa"):?>
-                    $('.enviar-outra').attr("href","http://tvcultura1.cmais.com.br/<?php echo $site->getSlug(); ?>/fale-conosco?step=4&email="+email);
+                    	$('.enviar-outra').attr("href","http://tvcultura1.cmais.com.br/<?php echo $site->getSlug(); ?>/fale-conosco?step=4&email="+email);
                     <?php  elseif($site->getType()=="Programa Radio"): ?>
                     	$('.enviar-outra').attr("href","http://tvcultura1.cmais.com.br/<?php echo $site->getSlug(); ?>/fale-conosco?step=4&email="+email);
                     <?php else:?>
