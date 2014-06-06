@@ -1,5 +1,5 @@
 <?php echo $site->getUrl() . "teste 2 >>>>>>>>" ?>
-<div id="email-central" class="fundo-cinza collapse in" style="overflow: hidden; clear: both;">
+<div id="email-central" class="fundo-cinza collapse in 2" style="overflow: hidden; clear: both;">
               <!--form envio-->
               <?php if(!isset($_GET["erro"])&& isset($_GET["erro"])!=1):?>
               <!-- row1 -->
