@@ -579,10 +579,10 @@
                 <div class="row" id="row9" >
                   <div class="page-header">
                     <h1>Gratos</h1>
-                    <p><span class="label label-success">cadastro alterado</span></p>
+                    <p><span class="label label-success">Cadastro alterado</span></p>
                   </div><!-- /.span -->
                   <div class="alert alert-block alert-success fade in">
-                    <h4 class="alert-heading">Sua cadastro foi alterado!</h4>
+                    <h4 class="alert-heading">Seu cadastro foi alterado!</h4>
                     <p>O que vc quer fazer agora?</p>
                     <div class="container-button">
 	                    <a class="btn btn-success enviar-outra"> Continuar o envio</a>
@@ -703,10 +703,16 @@
                     email = $('#f4_email2').val();
                     $('#btn6').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
                   })
-                  
+                  getUrl()
                   $('#btn4, #btn5').click(function(){
                     email = $('#f4_email2').val();
-                    $('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
+                    <?php if($site->getType()=="Programa"):?>
+                    	$('.enviar-outra').attr("href","http://tvcultura.cmais.com.br/central-de-relacionamento?step=4&email="+email);
+                    <?php  elseif($site->getType()=="Programa Radio"): ?>
+                    	$('.enviar-outra').attr("href","http://tvcultura1.cmais.com.br/<?php echo $site->getSlug(); ?>/fale-conosco?step=4&email="+email);
+                    <?php else:?>
+                      $('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
+                    <?php endif;?>	
                   });
                   $('.backBegin, .outro-email').click(function(){
                     goTop();
