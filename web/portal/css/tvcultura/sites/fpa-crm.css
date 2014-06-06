@@ -102,7 +102,7 @@
 #email-central .form-horizontal .control-group {margin-bottom:10px;}
 #email-central .alert h4 {color:#106d41 ;text-transform: none;}
 #email-central .btn{text-decoration: none !important;}
-#email-central .help-block{text-align:right;}
+#email-central .control-label .help-block{text-align:right;}
 /* /GERAL */
 
 /* CONTENT */
