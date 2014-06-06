@@ -67,7 +67,7 @@
 .tarja2{background-color: #eaeaea;}
 .label-green{background-color: #4cb957;}
 .label-red{background-color: #FF0000;}
-.label{margin:10px 0px}
+.label{margin:10px 0px; margin: 10px 0px;padding: 5px;font-size: 14px;width: 640px!important;text-align: center;display: block;}
 #col-sub .fundo-cinza {*width:520px;}
 #col-sub{margin-top:15px}
 #col-sub ul{margin:0;}
@@ -122,5 +122,5 @@
 .alert{width: 90%;}
 #email-central .control-group.selecionavel{padding: 0;width: 50%;margin: 10px 0;float: left;}
 #row8,#row9{margin: 10px;}
-.page-header{padding-bottom: 9px;}
+.page-header{padding-bottom: 9px;margin: 0px 0 10px;}
 
