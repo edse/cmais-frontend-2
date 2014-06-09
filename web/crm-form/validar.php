@@ -2,6 +2,8 @@
 error_reporting(E_ALL);
 ini_set('display_errors','On');
 
+$url = $_REQUEST["urlRequest"];
+
 if(!$_REQUEST["id"]){
   header("Location: http://cmais.com.br");
 }
@@ -17,11 +19,11 @@ $result = $client->valida_usuario(array('id'=>$_REQUEST["id"]));
 if($result->valida_usuarioResult != " " && $result->valida_usuarioResult != ""){
   /*header("Location: http://172.20.18.133/crm-form/form.html?step=1&email=".$result->valida_usuarioResult);*/
   //header("Location: http://cmais.com.br/central-de-relacionamento?step=1&email=".$result->valida_usuarioResult."&validacao=1");
-  header("Location: http://cmais.com.br/central-de-relacionamento?step=1&email=".$result->valida_usuarioResult."&validacao=1");
+  header("Location: ".$url."?step=1&email=".$result->valida_usuarioResult."&validacao=1");
 }
 else{
   /*header("Location: http://172.20.18.133/crm-form/form.html?erro=1");*/
   //header("Location: http://cmais.com.br/central-de-relacionamento?erro=1");
-  header("Location: http://cmais.com.br/central-de-relacionamento?erro=1");
+  header("Location: ".$url."?erro=1");
 }
 die();
