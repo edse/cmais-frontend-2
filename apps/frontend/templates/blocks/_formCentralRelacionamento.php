@@ -4,10 +4,10 @@
   $url = $site->RetriveUrl();
   $pos = strrpos($url,"central-de-relacionamento");
   $pos = strrpos($url, "tvcultura");
-  if($pos=="central-de-relacionamento"){
+  if($pos==TRUE){
     $url = "central-de-relacionamento";
   }
-  if($pos=="tvcultura"){
+  if($pos==TRUE){
     $url = "tvcultura";
   }
   echo $url;
