@@ -135,6 +135,11 @@
 #row9 .page-header h1{display:none;}
 
 #row11{margin:0;}
+#row7 .page-header h1,
 #row11 .page-header h1{display: none;}
+#row7 .alert,
 #row11 .alert{margin:10px auto!important;text-align:center!important;}
-#row11 .alert p{text-align:center!important;} 
+#row7 .alert p,
+#row11 .alert p{text-align:center!important;}
+
+ 
