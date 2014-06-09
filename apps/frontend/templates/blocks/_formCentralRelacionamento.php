@@ -3,10 +3,17 @@
 <?php
   $url = $site->RetriveUrl();
   echo $url . " 2>>>>>>>>";
-  $pos = strrpos($url, "central-de-relacionamento");
-  if ($pos == true) { // note: três sinais iguais
-     echo "encontrei";
-  } 
+  $pos = strrpos($url, array("central-de-relacionamento", "tvcultura"));
+  switch($pos){
+    case "central-de-relacionamento":
+      echo "central";
+    break;
+    case "tvcultura":
+      echo "tv";
+    break;  
+  }
+  
+   
 ?>
 <div id="email-central" class="fundo-cinza collapse in 2" style="overflow: hidden; clear: both;">
               <!--form envio-->
