@@ -76,7 +76,7 @@ $(document).ready(function(){
               </div>
               
 
-             <?php include_partial_from_folder('blocks','global/formCentralRelacionamento'<?php include_partial_from_folder('blocks','global/formCentralRelacionamento', 'site'=>$site, 'section'=>$section) ?>
+              <?php include_partial_from_folder('blocks','global/formCentralRelacionamento', array('site'=>$site, 'section'=>$section)) ?>
                 
               <?php foreach($displays["formas-de-atendimento"] as $d): ?>
                 
