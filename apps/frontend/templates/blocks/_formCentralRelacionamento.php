@@ -2,14 +2,12 @@
 <?php echo $site->getType() . " >>>>>>>>" ?>
 <?php
   $url = $site->RetriveUrl();
-  $pos = strrpos($url,"central-de-relacionamento");
-  $pos = strrpos($url, "tvcultura");
-  if($pos==TRUE){
-    $url = "central-de-relacionamento2";
-  }
-  if($pos==TRUE){
-    $url = "tvcultura2";
-  }
+  if(strrpos($url,"central-de-relacionamento")==TRUE)
+    $url = "central-de-relacionamento3";
+  elseif(strrpos($url, "tvcultura")==TRUE)
+    $url = "tvcultura3";
+  
+  
   echo $url;
   
   
