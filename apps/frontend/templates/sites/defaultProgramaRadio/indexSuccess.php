@@ -354,6 +354,9 @@
             </div>
             <!-- / BOX PUBLICIDADE -->
             <?php endif; ?>
+            <?php if($site->getSlug() =="seguindo-a-opera" || $site->getSlug() =="todos-os-cantos" || $site->getSlug() =="alma-brasileira" || $site->getSlug() =="bravo"):?>
+            	<?php include_partial_from_folder('blocks','global/facebook-1c', array('site' => $site, 'uri' => $uri)) ?>
+            <?php endif; ?>
           </div>
 
           <!-- /DIREITA -->
