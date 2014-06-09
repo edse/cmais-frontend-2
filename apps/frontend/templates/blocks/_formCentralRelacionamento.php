@@ -716,12 +716,12 @@
                   $('#f4_mais').click(function(){
                     email = $('#f4_email2').val();
                     //$('#btn6').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
-                    $('#btn6').attr("href","<?php $site->RetiveUrl() ?>?step=4&email="+email);
+                    $('#btn6').attr("href","<?php $site->RetriveUrl() ?>?step=4&email="+email);
                   })
                   
                   $('#btn4, #btn5').click(function(){
                     email = $('#f4_email2').val();
-                    	$('.enviar-outra').attr("href","<?php $site->RetiveUrl() ?>?step=4&email="+email);
+                    	$('.enviar-outra').attr("href","<?php $site->RetriveUrl() ?>?step=4&email="+email);
                   });
                   $('.backBegin, .outro-email').click(function(){
                     goTop();
@@ -736,7 +736,7 @@
                     $('#f4_maisinfo .control-group').removeClass("success").removeClass("error");
                     $('#f4_maisinfo').find("label.error.valid").remove();
                     $('#f4_maisinfo, #row10, .salvar-alteracoes').hide();
-                    $('.enviar-outra').attr("href","<?php $site->RetiveUrl() ?>?step=4&email="+email);
+                    $('.enviar-outra').attr("href","<?php $site->RetriveUrl() ?>?step=4&email="+email);
                     //$('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
                     $('.control-group.f4_mais').hide()
                     //$('#f4_mais').attr('checked','true');
