@@ -4,13 +4,8 @@
   $url = $site->RetriveUrl();
   echo $url . " 2>>>>>>>>";
   $pos = strrpos($url, array("central-de-relacionamento", "tvcultura"));
-  switch($pos){
-    case "central-de-relacionamento":
-      echo "central";
-    break;
-    case "tvcultura":
-      echo "tv";
-    break;  
+  if($pos == "central-de-relacionamento"){
+    echo "true";
   }
   
    
