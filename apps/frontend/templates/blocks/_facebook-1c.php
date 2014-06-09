@@ -25,6 +25,9 @@
                   <?php endif; ?>    
                   
                   <br /><br />
+                  <?php if($site->getSlug() =="joao-carlos-martins" || $site->getSlug() =="na-vertigem-do-dia" || $site->getSlug() =="passeios-da-memoria" || $site->getSlug() =="cinema-falado" || $site->getSlug() =="um-pouquinho-de-brasil") :?>
+                  	<fb:like-box href="http://www.facebook.com/culturafmoficial" width="300" show_faces="true" stream="false" header="true"></fb:like-box>
+                  <?php endif; ?>    
                   <fb:like-box href="<?php if($site->facebook_url!=""): ?><?php echo $site->facebook_url ?><?php else: ?>http://facebook.com/tvcultura<?php endif; ?>" width="300" show_faces="true" stream="false" header="true"></fb:like-box>
                   <!--fb:activity site="<?php echo $url?>" width="290" height="200" header="false" font="" border_color="" recommendations="true"></fb:activity-->
               </div>
