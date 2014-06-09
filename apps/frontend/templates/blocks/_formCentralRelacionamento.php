@@ -3,7 +3,7 @@
 <?php
   $url = $site->RetriveUrl();
   echo $url . " 2>>>>>>>>";
-  $pos = strrpos($url, "central-de-relacionemento");
+  $pos = strrpos($url, "central-de-relacionamento");
   if ($pos == true) { // note: três sinais iguais
      echo "encontrei";
   } 
