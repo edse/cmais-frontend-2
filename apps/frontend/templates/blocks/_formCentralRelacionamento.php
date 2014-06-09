@@ -1,9 +1,9 @@
 <?php echo $site->getTitle() . " >>>>>>>>" ?>
 <?php echo $site->getType() . " >>>>>>>>" ?>
 <?php
-  $url = (string)$site->RetriveUrl();
+  $url = $site->RetriveUrl();
   echo $url . " 2>>>>>>>>";
-  $pos = strrpos($url, array("cmais", "tvcultura", "culturafm", "culturabrasil"));
+  $pos = strrpos($url, "cmais");
   if ($pos === true) { // note: três sinais iguais
      echo "encontrei";
   } 
