@@ -2,11 +2,12 @@
 <?php echo $site->getType() . " >>>>>>>>" ?>
 <?php
   $url = $site->RetriveUrl();
-  echo $url . " 2>>>>>>>>";
+  echo $url . " >>>>>>>>";
   $pos = strrpos($url,"central-de-relacionamento");
-  if($pos===true){
-    echo "fui";
+  if($pos==true){
+    $url = "central-de-relacionamento";
   }
+  echo $url;
   
   
    
