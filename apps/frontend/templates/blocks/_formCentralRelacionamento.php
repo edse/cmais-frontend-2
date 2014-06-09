@@ -1,6 +1,6 @@
 <?php echo $site->getTitle() . " >>>>>>>>" ?>
 <?php echo $site->getType() . " >>>>>>>>" ?>
-<?php echo $site->getUrl() . " >>>>>>>>" ?>
+<?php echo $site->RetriveUrl() . " 2>>>>>>>>" ?>
 <div id="email-central" class="fundo-cinza collapse in 2" style="overflow: hidden; clear: both;">
               <!--form envio-->
               <?php if(!isset($_GET["erro"])&& isset($_GET["erro"])!=1):?>
