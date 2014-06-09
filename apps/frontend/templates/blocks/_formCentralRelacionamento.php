@@ -3,10 +3,11 @@
 <?php
   $url = $site->RetriveUrl();
   echo $url . " 2>>>>>>>>";
-  $pos = strrpos($url, array("central-de-relacionamento", "tvcultura"));
-  if($pos == "central-de-relacionamento"){
-    echo "true";
+  $pos = strrpos($url,"central-de-relacionamento");
+  if($pos===true){
+    echo "fui";
   }
+  
   
    
 ?>
