@@ -1,18 +1,3 @@
-<?php echo $site->getTitle() . " >>>>>>>>" ?>
-<?php echo $site->getType() . " >>>>>>>>" ?>
-<?php
-  $url = $site->RetriveUrl();
-  if(strrpos($url,"central-de-relacionamento")==TRUE)
-    $url = "central-de-relacionamento3";
-  elseif(strrpos($url, "tvcultura")==TRUE)
-    $url = "tvcultura3";
-  
-  
-  echo $url;
-  
-  
-   
-?>
 <div id="email-central" class="fundo-cinza collapse in 2" style="overflow: hidden; clear: both;">
               <!--form envio-->
               <?php if(!isset($_GET["erro"])&& isset($_GET["erro"])!=1):?>
@@ -520,7 +505,7 @@
                         <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader4" />
                         <button type="submit" class="btn btn-primary" id="btn4">Enviar Mensagem</button>
                         <button type="submit" class="btn btn-success" id="btn5" style="display:none">Salvar Cadastro</button>
-                        <a type="submit" class="btn btn-danger" href="http://cmais.com.br/central-de-relacionamento" id="btn6">Cancelar</a>
+                        <a type="submit" class="btn btn-danger" href="<?php echo $site->RetriveUrl(); ?>" id="btn6">Cancelar</a>
                       </div>
                       
                     </fieldset>
@@ -659,6 +644,20 @@
                 <script>
                 
                 
+                <?php
+                  $url = $site->RetriveUrl();
+                  if(strrpos($url,"central-de-relacionamento")==TRUE)
+                    $canal = "central-de-relacionamento";
+                  elseif(strrpos($url, "tvcultura")==TRUE)
+                    $canal = "tvcultura";
+                  elseif(strrpos($url, "culturabrasil")==TRUE)
+                    $canal = "culturabrasil";
+                  elseif(strrpos($url, "culturafm")==TRUE)
+                    $canal = "culturabrasil";
+                  
+                  echo $url;
+                 ?>
+                
                 var datas = [
                 "<strong>Institucional</strong> - Atendimento Central, Área Técnica, Venda de Produtos, Área de Afiliadas, Recrutamento e Seleção.<br/><strong>Emissora (TV ou Rádio)</strong> – Use para contato com programas da grade de programação.<br/><strong>Portal Cmais</strong> – Contato e relatar problemas nos sites do portal.",
                 "Escolha nas listas:  interesse ou  programa",
@@ -716,18 +715,13 @@
                   });
                   $('#f4_mais').click(function(){
                     email = $('#f4_email2').val();
-                    $('#btn6').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
+                    //$('#btn6').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
+                    $('#btn6').attr("href","<?php $site->RetiveUrl() ?>?step=4&email="+email);
                   })
                   
                   $('#btn4, #btn5').click(function(){
                     email = $('#f4_email2').val();
-                    <?php if($site->getType()=="Programa"):?>
-                    	$('.enviar-outra').attr("href","http://tvcultura1.cmais.com.br/<?php echo $site->getSlug(); ?>/fale-conosco?step=4&email="+email);
-                    <?php  elseif($site->getType()=="Programa Radio"): ?>
-                    	$('.enviar-outra').attr("href","http://tvcultura1.cmais.com.br/<?php echo $site->getSlug(); ?>/fale-conosco?step=4&email="+email);
-                    <?php else:?>
-                      $('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
-                    <?php endif;?>	
+                    	$('.enviar-outra').attr("href","<?php $site->RetiveUrl() ?>?step=4&email="+email);
                   });
                   $('.backBegin, .outro-email').click(function(){
                     goTop();
@@ -742,7 +736,8 @@
                     $('#f4_maisinfo .control-group').removeClass("success").removeClass("error");
                     $('#f4_maisinfo').find("label.error.valid").remove();
                     $('#f4_maisinfo, #row10, .salvar-alteracoes').hide();
-                    $('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
+                    $('.enviar-outra').attr("href","<?php $site->RetiveUrl() ?>?step=4&email="+email);
+                    //$('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
                     $('.control-group.f4_mais').hide()
                     //$('#f4_mais').attr('checked','true');
                     $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');
