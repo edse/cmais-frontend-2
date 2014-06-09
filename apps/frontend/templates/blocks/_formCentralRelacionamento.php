@@ -5,10 +5,10 @@
   $pos = strrpos($url,"central-de-relacionamento");
   $pos = strrpos($url, "tvcultura");
   if($pos==TRUE){
-    $url = "central-de-relacionamento";
+    $url = "central-de-relacionamento2";
   }
   if($pos==TRUE){
-    $url = "tvcultura";
+    $url = "tvcultura2";
   }
   echo $url;
   
