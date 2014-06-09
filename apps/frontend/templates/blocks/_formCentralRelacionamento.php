@@ -3,7 +3,7 @@
 <?php
   $url = $site->RetriveUrl();
   echo $url . " >>>>>>>>";
-  $pos = strrpos($url,"central-de-relacionamento");
+  $pos = strrpos($url,array("central-de-relacionamento"));
   if($pos==true){
     $url = "central-de-relacionamento";
   }
