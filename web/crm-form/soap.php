@@ -195,6 +195,7 @@ else if(($_REQUEST["step"]==2)&&($_REQUEST["f2_nome"]!="")){
       $telefone = substr($_REQUEST["f2_telefone"], 5, 9);
     }
     $arr = array(
+      'urlRequest'            =>  (isset($_REQUEST["urlRequest"])? $_REQUEST["urlRequest"] : "" ),          
       'nome'                  =>  (isset($_REQUEST["f2_nome"]))? $_REQUEST["f2_nome"] : "", 
       'email'                 =>  (isset($_REQUEST["email"]))? $_REQUEST["email"] : "", 
       'cod_faixaetaria'       =>  (isset($_REQUEST["f2_cod_faixaetaria"]))? $_REQUEST["f2_cod_faixaetaria"] : "",
