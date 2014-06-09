@@ -108,7 +108,7 @@
 		   	   	  <?php
                 $sectionAssets = Doctrine::getTable('Section')->findOneBySiteIdAndSlug($site->getId(),"linha-do-tempo");
                 $assetsCount = $sectionAssets->getAssets();
-                $quant = -1;
+                $quant = 0;
                 $lastDateShow = "";
                 //echo count($assetsCount) . ">>>>>>>>><br>";
                 foreach($assetsCount as $a){

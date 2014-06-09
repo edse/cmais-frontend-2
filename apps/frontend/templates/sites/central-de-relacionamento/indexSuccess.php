@@ -67,7 +67,7 @@ $(document).ready(function(){
          <!-- COLUNA SUB DIR 2 -->
          <div id="col-sub" class="texto-preto">
             <div class="accordion-group">
-              <div class="accordion-heading escuro">
+              <div class="accordion-heading escuro"> 
                 <i class="icon-circle-arrow-down <?php if(isset($_GET['step'])&&$_GET['step']==1){echo "icon-circle-arrow-down";}else{echo "icon-circle-arrow-right";}?> seta"></i>  
                 <a href="javascript:;" class="formas" data-toggle="collapse" data-target="#email-central" data-parent="#col-sub">
                   Por meio eletrônico
@@ -76,7 +76,7 @@ $(document).ready(function(){
               </div>
               
 
-             <?php include_partial_from_folder('blocks','global/formCentralRelacionamento')?>
+              <?php include_partial_from_folder('blocks','global/formCentralRelacionamento', array('site'=>$site, 'section'=>$section)) ?>
                 
               <?php foreach($displays["formas-de-atendimento"] as $d): ?>
                 

@@ -1,4 +1,5 @@
-<div id="email-central" class="fundo-cinza collapse in" style="overflow: hidden; clear: both;">
+
+<div id="email-central" class="fundo-cinza collapse in 2" style="overflow: hidden; clear: both;">
               <!--form envio-->
               <?php if(!isset($_GET["erro"])&& isset($_GET["erro"])!=1):?>
               <!-- row1 -->
@@ -35,6 +36,7 @@
                 <form class="form-horizontal" id="form2" method="post">
                   <input type="hidden" name="step" value="2" />
                   <input type="hidden" name="email" id="f2_email" value="" />
+                  <input type="hidden" name="urlRequest" id="f2_urlRequest" value="">
                   <fieldset>
                     <div class="control-group">
                       <label class="control-label" for="f2_email2">E-mail</label>
@@ -505,7 +507,7 @@
                         <img src="http://cmais.com.br/portal/images/ajax-loader.gif" alt="carregando..." style="display:none" width="16px" height="16px" id="loader4" />
                         <button type="submit" class="btn btn-primary" id="btn4">Enviar Mensagem</button>
                         <button type="submit" class="btn btn-success" id="btn5" style="display:none">Salvar Cadastro</button>
-                        <a type="submit" class="btn btn-danger" href="http://cmais.com.br/central-de-relacionamento" id="btn6">Cancelar</a>
+                        <a type="submit" class="btn btn-danger" href="<?php echo $site->RetriveUrl(); ?>" id="btn6">Cancelar</a>
                       </div>
                       
                     </fieldset>
@@ -579,13 +581,15 @@
                 <div class="row" id="row9" >
                   <div class="page-header">
                     <h1>Gratos</h1>
-                    <p><span class="label label-success">cadastro alterado</span></p>
+                    <p><span class="label label-success">Cadastro alterado</span></p>
                   </div><!-- /.span -->
                   <div class="alert alert-block alert-success fade in">
-                    <h4 class="alert-heading">Sua mensagem foi enviada!</h4>
+                    <h4 class="alert-heading">Seu cadastro foi alterado!</h4>
                     <p>O que vc quer fazer agora?</p>
-                    <a class="btn btn-success enviar-outra"> Continuar o envio</a>
-                    <a class="btn btn-success change-form" href="javascript:;"> Alterar novamente seu cadastro</a>
+                    <div class="container-button">
+	                    <a class="btn btn-success enviar-outra"> Continuar o envio</a>
+	                    <a class="btn btn-success change-form" href="javascript:;"> Alterar novamente seu cadastro</a>
+                    </div>
                   </div>
                 </div>
                 <!-- /row9 -->
@@ -641,7 +645,15 @@
                 <script src="http://cmais.com.br/portal/js/jquery.maskedinput-1.3.min.js"></script>
                 <script>
                 
-                
+                <?php
+                function getUrl() {
+                  $url  = @( $_SERVER["HTTPS"] != 'on' ) ? 'http://'.$_SERVER["SERVER_NAME"] :  'https://'.$_SERVER["SERVER_NAME"];
+                  //$url .= ( $_SERVER["SERVER_PORT"] !== 80 ) ? ":".$_SERVER["SERVER_PORT"] : "";
+                  $url .= $_SERVER["REQUEST_URI"];
+                  return $url;
+                }
+                ?>
+                $('#f2_urlRequest').attr('value','<?php echo getUrl(); ?>');
                 var datas = [
                 "<strong>Institucional</strong> - Atendimento Central, Área Técnica, Venda de Produtos, Área de Afiliadas, Recrutamento e Seleção.<br/><strong>Emissora (TV ou Rádio)</strong> – Use para contato com programas da grade de programação.<br/><strong>Portal Cmais</strong> – Contato e relatar problemas nos sites do portal.",
                 "Escolha nas listas:  interesse ou  programa",
@@ -699,12 +711,13 @@
                   });
                   $('#f4_mais').click(function(){
                     email = $('#f4_email2').val();
-                    $('#btn6').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
+                    //$('#btn6').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
+                    $('#btn6').attr("href","<?php $site->RetriveUrl() ?>?step=4&email="+email);
                   })
                   
                   $('#btn4, #btn5').click(function(){
                     email = $('#f4_email2').val();
-                    $('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
+                    	$('.enviar-outra').attr("href","<?php $site->RetriveUrl() ?>?step=4&email="+email);
                   });
                   $('.backBegin, .outro-email').click(function(){
                     goTop();
@@ -719,7 +732,8 @@
                     $('#f4_maisinfo .control-group').removeClass("success").removeClass("error");
                     $('#f4_maisinfo').find("label.error.valid").remove();
                     $('#f4_maisinfo, #row10, .salvar-alteracoes').hide();
-                    $('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
+                    $('.enviar-outra').attr("href","<?php $site->RetriveUrl() ?>?step=4&email="+email);
+                    //$('.enviar-outra').attr("href","http://cmais.com.br/central-de-relacionamento?step=4&email="+email);
                     $('.control-group.f4_mais').hide()
                     //$('#f4_mais').attr('checked','true');
                     $('#row4, #f4_maisinfo, #btn5').fadeIn('fast');

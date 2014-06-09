@@ -67,7 +67,7 @@
 .tarja2{background-color: #eaeaea;}
 .label-green{background-color: #4cb957;}
 .label-red{background-color: #FF0000;}
-.label{margin:10px 0px}
+.label{margin:10px 0px; margin: 10px 0px;padding: 5px;font-size: 14px;width: 640px!important;text-align: center;display: block;}
 #col-sub .fundo-cinza {*width:520px;}
 #col-sub{margin-top:15px}
 #col-sub ul{margin:0;}
@@ -87,13 +87,13 @@
 .texto-verde{color:#106d41 !important}
 #row1, #row2, #row3, #row4, #row5, #row6, #row7{margin:7px auto;}
 #email-central .pageheader{margin:0 0 10px 0;border: none;}
-#email-central input[type=text]{width: 90%;*margin-left:-120px;}
+#email-central input[type=text]{width: 94%;*margin-left:-120px;}
 #email-central input[type=checkbox]{width: 30px;}
 #email-central textarea{*margin-left:-120px;}
-#email-central .botoes-form{margin-left:120px;}
+#email-central .botoes-form{margin-left:64px;}
 #email-central .cancelar{color:#333 !important;text-decoration:none;}
 #email-central .control-group.success .help-block{margin-top:10px;}
-#email-central .form-horizontal .control-label{min-width: 60px;text-align: left;width: auto;margin-right:5px}
+#email-central .form-horizontal .control-label{min-width: 60px;text-align: right;width: 103px;margin-right:5px}
 #email-central .form-horizontal .controls{margin-left: 60px;}
 #email-central .row, #maisinfo, #f4_maisinfo, #f3_maisinfo, #f2_maisinfo {display: none;}
 #email-central label.valid {width: 24px; height: 24px; background: url(http://cmais.com.br/portal/images/valid.png) center center no-repeat; display: inline-block; text-indent: -9999px;}
@@ -102,6 +102,10 @@
 #email-central .form-horizontal .control-group {margin-bottom:10px;}
 #email-central .alert h4 {color:#106d41 ;text-transform: none;}
 #email-central .btn{text-decoration: none !important;}
+#email-central .control-label .help-block{text-align:right; margin:0 0 0 7px;}
+#email-central .salvar-alteracoes {display: none;width: 80%;background: yellow;margin: 0 auto 20px;padding: 10px;border: 1px red dashed;color: red;text-align: center;text-transform: uppercase;font-weight: bold;font-size: 14px;}
+#email-central .alert {background-color: #faea94;margin: 10px 0 10px 0;padding: 5px;}
+#email-central .alert-block .help-block{margin:0;}
 /* /GERAL */
 
 /* CONTENT */
@@ -122,5 +126,20 @@
 .alert{width: 90%;}
 #email-central .control-group.selecionavel{padding: 0;width: 50%;margin: 10px 0;float: left;}
 #row8,#row9{margin: 10px;}
-.page-header{padding-bottom: 9px;}
 
+.page-header{padding-bottom: 9px;margin: 0px 0 10px;}
+
+.row .container-button{overflow:hidden; display:block; margin: 0 auto;}
+
+#row9 .alert-block p{margin:10px 0;}
+#row9 .page-header h1{display:none;}
+
+#row11{margin:0;}
+#row7 .page-header h1,
+#row11 .page-header h1{display: none;}
+#row7 .alert,
+#row11 .alert{margin:10px auto!important;text-align:center!important;}
+#row7 .alert p,
+#row11 .alert p{text-align:center!important;}
+
+ 
