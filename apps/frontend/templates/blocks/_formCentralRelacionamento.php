@@ -653,7 +653,7 @@
                   return $url;
                 }
                 ?>
-                $('#f2_urlRequest').attr('value','<?php echo getUrl(); ?>');
+                $('#f2_urlRequest').attr('value','<?php echo getUrl().">>>"; ?>');
                 var datas = [
                 "<strong>Institucional</strong> - Atendimento Central, Área Técnica, Venda de Produtos, Área de Afiliadas, Recrutamento e Seleção.<br/><strong>Emissora (TV ou Rádio)</strong> – Use para contato com programas da grade de programação.<br/><strong>Portal Cmais</strong> – Contato e relatar problemas nos sites do portal.",
                 "Escolha nas listas:  interesse ou  programa",
