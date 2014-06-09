@@ -1,6 +1,13 @@
 <?php echo $site->getTitle() . " >>>>>>>>" ?>
 <?php echo $site->getType() . " >>>>>>>>" ?>
-<?php echo $site->RetriveUrl() . " 2>>>>>>>>" ?>
+<?php
+  $url = $site->RetriveUrl();
+  echo $url . " 2>>>>>>>>";
+  $pos = strrpos($url, array("cmais", "tvcultura", "culturafm", "culturabrasil"));
+  if ($pos === true) { // note: três sinais iguais
+     echo "encontrei";
+  } 
+?>
 <div id="email-central" class="fundo-cinza collapse in 2" style="overflow: hidden; clear: both;">
               <!--form envio-->
               <?php if(!isset($_GET["erro"])&& isset($_GET["erro"])!=1):?>
