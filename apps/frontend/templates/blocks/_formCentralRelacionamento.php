@@ -646,7 +646,7 @@
                 <script>
                 setTimeout(function(){
                   if($('#row4').visible()){
-                    alert
+                    alert("oi");
                   }
                 }, 500);
                 
