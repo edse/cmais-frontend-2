@@ -159,7 +159,10 @@
             </script>
           </div>
           <!-- / BOX PUBLICIDADE -->
-
+					
+					<?php include_partial_from_folder('blocks','global/facebook-1c', array('site' => $site, 'uri' => $uri)) ?>
+					
+					
         </div>
         <!-- /DIREITA -->
       </div>
