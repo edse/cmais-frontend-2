@@ -644,11 +644,9 @@
                 <script src="http://cmais.com.br/portal/js/messages_ptbr.js"></script>
                 <script src="http://cmais.com.br/portal/js/jquery.maskedinput-1.3.min.js"></script>
                 <script>
-                setTimeout(function(){
-                  if($('#row4').visible()){
-                    alert("oi");
-                  }
-                }, 500);
+                <?php if(isset($_REQUEST['step']) && $_REQUEST['step'] == 4): ?>
+                  alert("foi")
+                <?php endif;?>
                 
                 var newURL = window.location.protocol + "//" + window.location.host + window.location.pathname;
                 $('#f2_url').attr('value', newURL);
