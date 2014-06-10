@@ -645,7 +645,7 @@
                 <script src="http://cmais.com.br/portal/js/jquery.maskedinput-1.3.min.js"></script>
                 <script>
                 
-                $('#f2_url').attr('value','<?php echo $_SERVER['QUERY_STRING']; ?>');
+                $('#f2_url').attr('value','<?php echo $_SERVER['PHP_SELF']; ?>');
                 
                 <?php if($site->getSlug() != "central-de-relacionamento"): ?>
                   $('#f2_exterior').parent().prev().css('width','130px');
