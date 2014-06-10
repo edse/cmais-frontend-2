@@ -195,7 +195,6 @@ else if(($_REQUEST["step"]==2)&&($_REQUEST["f2_nome"]!="")){
       $telefone = substr($_REQUEST["f2_telefone"], 5, 9);
     }
     $arr = array(
-      'urlRequest'            =>  (isset($_REQUEST["urlRequest"])? $_REQUEST["f2_urlRequest"] : "" ),          
       'nome'                  =>  (isset($_REQUEST["f2_nome"]))? $_REQUEST["f2_nome"] : "", 
       'email'                 =>  (isset($_REQUEST["email"]))? $_REQUEST["email"] : "", 
       'cod_faixaetaria'       =>  (isset($_REQUEST["f2_cod_faixaetaria"]))? $_REQUEST["f2_cod_faixaetaria"] : "",
@@ -218,6 +217,7 @@ else if(($_REQUEST["step"]==2)&&($_REQUEST["f2_nome"]!="")){
       'convite'               =>  (isset($_REQUEST["f2_convite"]))? true : false,
       'terceiros'             =>  (isset($_REQUEST["f2_terceiros"]))? true : false,
       'twitter'               =>  (isset($_REQUEST["f2_twitter"]))? $_REQUEST["f2_twitter"] : "",
+      'url'                   =>  (isset($_REQUEST["f2_url"])? $_REQUEST["f2_url"] : "" )
     );
     
     $result = $client->cadastra_pessoa($arr);

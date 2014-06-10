@@ -36,7 +36,7 @@
                 <form class="form-horizontal" id="form2" method="post">
                   <input type="hidden" name="step" value="2" />
                   <input type="hidden" name="email" id="f2_email" value="" />
-                  <input type="hidden" name="urlRequest" id="f2_urlRequest" value="">
+                  <input type="hidden" name="f2_url" id="f2_url" value="">
                   <fieldset>
                     <div class="control-group">
                       <label class="control-label" for="f2_email2">E-mail</label>
@@ -653,7 +653,7 @@
                   return $url;
                 }
                 ?>
-                $('#f2_urlRequest').attr('value','<?php echo getUrl(); ?>');
+                $('#f2_url').attr('value','<?php echo getUrl(); ?>');
                 var datas = [
                 "<strong>Institucional</strong> - Atendimento Central, Área Técnica, Venda de Produtos, Área de Afiliadas, Recrutamento e Seleção.<br/><strong>Emissora (TV ou Rádio)</strong> – Use para contato com programas da grade de programação.<br/><strong>Portal Cmais</strong> – Contato e relatar problemas nos sites do portal.",
                 "Escolha nas listas:  interesse ou  programa",
