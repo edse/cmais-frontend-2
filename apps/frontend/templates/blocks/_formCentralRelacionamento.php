@@ -644,8 +644,8 @@
                 <script src="http://cmais.com.br/portal/js/messages_ptbr.js"></script>
                 <script src="http://cmais.com.br/portal/js/jquery.maskedinput-1.3.min.js"></script>
                 <script>
-                
-                $('#f2_url').attr('value','<?php echo $_SERVER['PHP_SELF']; ?>');
+                var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
+                $('#f2_url').attr('value', newURL);
                 
                 <?php if($site->getSlug() != "central-de-relacionamento"): ?>
                   $('#f2_exterior').parent().prev().css('width','130px');
