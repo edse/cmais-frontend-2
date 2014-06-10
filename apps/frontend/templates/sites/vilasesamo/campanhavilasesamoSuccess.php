@@ -79,6 +79,7 @@
 	                            </a>
 	                          </li>
                           <?php endif; ?>
+                          <?php if($ai->Asset->AssetType->getSlug() == "content"): ?>
                           <li class="span4 element">
                             <a id="texto<?php echo $k ?>" data-number="<?php echo $k?>" class="fancybox texto" rel="gallery" href="#" title="<?php echo $ai->Asset->getDescription() ?>" aria-label="<?php echo $ai->Asset->getDescription() ?>">
                               <div class="container-image"> 
@@ -89,7 +90,7 @@
                               <div class="conteudoTexto"><?php echo $ai->Asset->AssetContent->render()?></div>
                             </a>
                           </li>
-                          
+                          <?php endif; ?>
                         <?php endforeach; ?>
                         
 			                <script>
