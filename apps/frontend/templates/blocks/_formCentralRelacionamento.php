@@ -654,6 +654,12 @@
                 }
                 ?>
                 $('#f2_url').attr('value','<?php echo getUrl(); ?>');
+                
+                <?php if($site->getSlug() != "central-de-relacionamento"): ?>
+                  $('#f2_exterior').parent().prev().css('width','130px');
+                  $('#f2_cod_recepcaodesinal').parent().prev().css('width','248px');
+                <?php endif; ?>
+                
                 var datas = [
                 "<strong>Institucional</strong> - Atendimento Central, Área Técnica, Venda de Produtos, Área de Afiliadas, Recrutamento e Seleção.<br/><strong>Emissora (TV ou Rádio)</strong> – Use para contato com programas da grade de programação.<br/><strong>Portal Cmais</strong> – Contato e relatar problemas nos sites do portal.",
                 "Escolha nas listas:  interesse ou  programa",

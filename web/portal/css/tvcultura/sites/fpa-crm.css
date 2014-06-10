@@ -87,10 +87,10 @@
 .texto-verde{color:#106d41 !important}
 #row1, #row2, #row3, #row4, #row5, #row6, #row7{margin:7px auto;}
 #email-central .pageheader{margin:0 0 10px 0;border: none;}
-#email-central input[type=text]{width: 81%;*margin-left:-120px;}
+#email-central input[type=text]{width: 89%;*margin-left:-120px;}
 #email-central input[type=checkbox]{width: 30px;}
 #email-central textarea{*margin-left:-120px;}
-#email-central .botoes-form{margin-left:64px;}
+#email-central .botoes-form{margin-left:8px;}
 #email-central .cancelar{color:#333 !important;text-decoration:none;}
 #email-central .control-group.success .help-block{margin-top:10px;}
 #email-central .form-horizontal .control-label{min-width: 60px;text-align: right;width: 60px;margin-right:5px}
