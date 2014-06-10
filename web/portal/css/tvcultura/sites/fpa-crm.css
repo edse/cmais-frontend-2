@@ -100,7 +100,7 @@
 #email-central label.error {font-weight: bold; /*overflow:hidden;*/ padding: 2px 8px;font-size: 11px;margin: -2px 0 -3px -7px}
 #email-central .trocar{position: absolute;left: 8px;}
 #email-central .form-horizontal .control-group {margin-bottom:10px;}
-#email-central .alert h4 {color:#106d41 ;text-transform: none;}
+#email-central .alert h4 {color:#106d41 ;text-transform: none;} 
 #email-central .btn{text-decoration: none !important;}
 #email-central .control-label .help-block{text-align:right; margin:0 0 0 7px;}
 #email-central .salvar-alteracoes {display: none;width: 80%;background: yellow;margin: 0 auto 20px;padding: 10px;border: 1px red dashed;color: red;text-align: center;text-transform: uppercase;font-weight: bold;font-size: 14px;}
