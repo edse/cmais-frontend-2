@@ -645,15 +645,7 @@
                 <script src="http://cmais.com.br/portal/js/jquery.maskedinput-1.3.min.js"></script>
                 <script>
                 
-                <?php
-                function getUrl() {
-                  $url  = @( $_SERVER["HTTPS"] != 'on' ) ? 'http://'.$_SERVER["SERVER_NAME"] :  'https://'.$_SERVER["SERVER_NAME"];
-                  //$url .= ( $_SERVER["SERVER_PORT"] !== 80 ) ? ":".$_SERVER["SERVER_PORT"] : "";
-                  $url .= $_SERVER["REQUEST_URI"];
-                  return $url;
-                }
-                ?>
-                $('#f2_url').attr('value','<?php echo getUrl(); ?>');
+                $('#f2_url').attr('value','<?php echo $_SERVER["REQUEST_URI"]; ?>');
                 
                 <?php if($site->getSlug() != "central-de-relacionamento"): ?>
                   $('#f2_exterior').parent().prev().css('width','130px');
