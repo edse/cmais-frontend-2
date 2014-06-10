@@ -36,7 +36,7 @@
                 <form class="form-horizontal" id="form2" method="post">
                   <input type="hidden" name="step" value="2" />
                   <input type="hidden" name="email" id="f2_email" value="" />
-                  <input type="hidden" name="urlRequest" id="f2_urlRequest" value="">
+                  <input type="hidden" name="f2_url" id="f2_url" value="">
                   <fieldset>
                     <div class="control-group">
                       <label class="control-label" for="f2_email2">E-mail</label>
@@ -644,16 +644,18 @@
                 <script src="http://cmais.com.br/portal/js/messages_ptbr.js"></script>
                 <script src="http://cmais.com.br/portal/js/jquery.maskedinput-1.3.min.js"></script>
                 <script>
+                <?php if(isset($_REQUEST['step']) && $_REQUEST['step'] == 4): ?>
+                  alert("foi")
+                <?php endif;?>
                 
-                <?php
-                function getUrl() {
-                  $url  = @( $_SERVER["HTTPS"] != 'on' ) ? 'http://'.$_SERVER["SERVER_NAME"] :  'https://'.$_SERVER["SERVER_NAME"];
-                  //$url .= ( $_SERVER["SERVER_PORT"] !== 80 ) ? ":".$_SERVER["SERVER_PORT"] : "";
-                  $url .= $_SERVER["REQUEST_URI"];
-                  return $url;
-                }
-                ?>
-                $('#f2_urlRequest').attr('value','<?php echo getUrl(); ?>');
+                var newURL = window.location.protocol + "//" + window.location.host + window.location.pathname;
+                $('#f2_url').attr('value', newURL);
+                
+                <?php if($site->getSlug() != "central-de-relacionamento"): ?>
+                  $('#f2_exterior').parent().prev().css('width','130px');
+                  $('#f2_cod_recepcaodesinal').parent().prev().css('width','248px');
+                <?php endif; ?>
+                
                 var datas = [
                 "<strong>Institucional</strong> - Atendimento Central, Área Técnica, Venda de Produtos, Área de Afiliadas, Recrutamento e Seleção.<br/><strong>Emissora (TV ou Rádio)</strong> – Use para contato com programas da grade de programação.<br/><strong>Portal Cmais</strong> – Contato e relatar problemas nos sites do portal.",
                 "Escolha nas listas:  interesse ou  programa",
