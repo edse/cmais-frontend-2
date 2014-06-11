@@ -63,8 +63,23 @@
          		<div id="collapseOfMonth" class="accordion-body collapse" style="height: 0px;">
                 <div class="accordion-inner">
                   <ul id="container" class="row-fluid">
-                    
+                    	
                          <?php foreach($displays_enviados['enviados'] as $k=>$ai): ?>
+                        
+                     	<!--See for asset de imagem-->
+                         <?php if($ai->Asset->AssetType->getSlug() == "image"): ?>
+	                          	
+	                          <li class="span4 element" >
+	                            <a class="fancybox2" rel="gallery1" href="<?php echo $ai->Asset->retriveImageUrlByImageUsage('original'); ?>" title="<?php echo $ai->Asset->getTitle()." - ". $ai->Asset->getDescription() ?>" aria-label="<?php echo $ai->Asset->AssetImage->getHeadline() ?>">
+	                              <div class="container-image"> 
+	                                <img src="<?php echo $ai->Asset->retriveImageUrlByImageUsage('image-13'); ?>" alt="<?php echo $ai->getTitle(); ?>">
+	                              </div>
+	                              <i class="icones-sprite-interna icone-participe-pequeno"></i>
+	                              <div><img class="altura" src="http://cmais.com.br/portal/images/capaPrograma/vilasesamo2/altura.png"><?php echo $ai->getTitle(); ?></div>
+	                            </a>
+	                          </li>
+                          <?php endif; ?>
+                          <?php if($ai->Asset->AssetType->getSlug() == "content"): ?>
                           <li class="span4 element">
                             <a id="texto<?php echo $k ?>" data-number="<?php echo $k?>" class="fancybox texto" rel="gallery" href="#" title="<?php echo $ai->Asset->getDescription() ?>" aria-label="<?php echo $ai->Asset->getDescription() ?>">
                               <div class="container-image"> 
@@ -75,7 +90,7 @@
                               <div class="conteudoTexto"><?php echo $ai->Asset->AssetContent->render()?></div>
                             </a>
                           </li>
-                          
+                          <?php endif; ?>
                         <?php endforeach; ?>
                         
 			                <script>

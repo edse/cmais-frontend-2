@@ -10,7 +10,7 @@
       <ul>
         <li><a href="<?php echo $siteUrl ?>/personagens" title="Personagens">Personagens</a></li>
         <li><a href="<?php echo $siteUrl ?>/personagens" title="Autógrafos">Autógrafos</a></li>
-        <li><a href="<?php echo $siteUrl ?>/clipes-musicais" title="Receitinhas">Clipes</a></li>
+        <li><a href="<?php echo $siteUrl ?>/paiol/clipes-musicais" title="Receitinhas">Clipes</a></li>
         <li><a href="<?php echo $siteUrl ?>/series" title="Receitinhas">Séries Especiais</a></li>
         <li><a href="<?php echo $siteUrl ?>/radio" title="Rádio Cocoricó">Rádio Cocoricó</a></li>
       </ul>
