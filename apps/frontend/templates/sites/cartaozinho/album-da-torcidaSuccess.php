@@ -254,7 +254,7 @@
 <script type="text/javascript">
 
 	$(window).ready(function() {
-	  //teste
+	  //teste 
 		$('#loading').show();
 		$('#magazine').turn({
 							display: 'double',
