@@ -120,8 +120,10 @@
   							  <!--estilos borda fig-->
   							  
   							  <!--páginas-->
-  							  <?php $fig = 0?> 
-							    <?php for($i=0; $i<$pages;$i++):?>
+  							  <?php //$fig = 0?> 
+							    <?php //for($i=0; $i<$pages;$i++):?>
+							    <?php $fig = $pages?> 
+                  <?php for($i = $pages; $i>=0;$i--):?>
 							      <!-- determinando pg Esq ou Dir -->
   							    <?php if($i%2 == 0){$side = "Esq";}else{$side = "Dir";}?>
   							    
@@ -151,8 +153,8 @@
                             <?php endif; ?>
                             
                             <!-- ordenando figurinhas -->
-                            <?php $fig++ ?>
-                            
+                            <?php //$fig++ ?>
+                            <?php $fig-- ?>
                         <?php endfor;?>
                       </ul>
                     </div>
